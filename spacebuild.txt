@@ -1,0 +1,8 @@
+"superkillers"
+{
+	"base"		"base"
+	"title"		"Spacebuild Infinite"
+	"maps"		"sbi_"
+	"menusystem"	"1"
+	"workshopid"	""
+}
