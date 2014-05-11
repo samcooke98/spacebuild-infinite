@@ -26,3 +26,11 @@ function GM:PlayerSpawn( ply )
 	
 	ply:SetupHands();
 end
+
+function GM:PhysgunPickup( ply, ent) 
+	if (ent:GetClass() == "func_brush" or (ent:GetClass() == "player" and not ply:IsAdmin())) then
+		return false;
+	else
+		return true; -- Not complete yet
+	end
+end

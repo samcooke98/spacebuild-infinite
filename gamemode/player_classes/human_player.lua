@@ -13,6 +13,6 @@ PLAYER.WeaponColor          = Vector( "0.30 1.80 2.10" )
 
 -- Specify variable to store Race name
 PLAYER.RaceName				= "Human"
-
+PLAYER.Model				= "male01"
 
 player_manager.RegisterClass( "player_sb_human", PLAYER, "player_sb_base" )
