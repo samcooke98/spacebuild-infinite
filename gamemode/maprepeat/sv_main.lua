@@ -193,9 +193,12 @@ hook.Add("InitPostEntity","MR_IPE",function()
 		MapRepeat.GenCell("0 0 0")
 	end
 end)
+lotsOfEnts = {};
 hook.Add("EntityKeyValue","MR_KVH",function(ent,k,v)
---TODO: This shouldn't be hook.add - It'll cause probablems on non
-	print("Entity Key Values")
+--TODO: This shouldn't be hook.add - It'll cause problems on non-infinite maps( ? )
+--ENTITY KEY VALUES HERE
+	
+	table.insert(lotsOfEnts, {ent, k,v} )
 	local rep = {}
 	if string.sub(k,1,4) == 'cell' then
 		local i = string.sub(k,5)
