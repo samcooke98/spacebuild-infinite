@@ -1,5 +1,5 @@
 include( "shared.lua" )
-
+print("CL_init!")
 --Gravity Hull
 GravHull = {}
 local GH = GravHull
@@ -32,6 +32,7 @@ function GM:HUDShouldDraw( element )
 	end
 	return true
 end
+
 
 function GM:HUDWeaponPickedUp( weap )
 	--We should do some call wireframe shit with the weapon here. 

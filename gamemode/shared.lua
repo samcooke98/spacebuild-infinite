@@ -27,10 +27,17 @@ function GM:PlayerSpawn( ply )
 	ply:SetupHands();
 end
 
+local noPhysgunEnts = {
+	"func_brush", "sbi_planet"
+}
+
 function GM:PhysgunPickup( ply, ent) 
-	if (ent:GetClass() == "func_brush" or (ent:GetClass() == "player" and not ply:IsAdmin())) then
+	if (ent:GetClass() == "player" and not ply:IsAdmin()) then
 		return false;
-	else
-		return true; -- Not complete yet
+	end
+	for k,v in pairs(noPhysgunEnts) do
+		if ( ent:GetClass() == v) then
+			return false
+		end
 	end
 end

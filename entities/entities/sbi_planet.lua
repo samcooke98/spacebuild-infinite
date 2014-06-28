@@ -25,33 +25,36 @@ function ENT:Initialize()
 	self.Radius = self:GetRadius()
 	self.longSteps = self:GetLongSteps()
 	self.latSteps = self:GetLatSteps()
+	
+	self.latSteps = 10
+	self.longSteps = 10
+	
+	if CLIENT then self:SetRenderBounds(  Vector(-self.Radius,-self.Radius,-self.Radius), Vector(self.Radius,self.Radius,self.Radius) ) end
 	if SERVER then 
 		self:SetMoveType( MOVETYPE_NONE ) -- We don't want these planets to move
 		self:SetSolid( SOLID_CUSTOM ) -- We want people to be able to pass through it...
 
 		self:PhysicsInitSphere( self.Radius ) -- Create a standard physics sphere
-		--self:SetCollisionBounds( Vector(-self.Radius,-self.Radius,-self.Radius), Vector(self.Radius,self.Radius,self.Radiuss) )
-		
+		self:SetCollisionBounds( Vector(-self.Radius, -self.Radius, -self.Radius ), Vector( self.Radius, self.Radius, self.Radius ) ) 
 		self:GetPhysicsObject():EnableMotion( false ) -- DON'T MOVE!
 		self:DrawShadow( false ) -- That would be bad.
 
 		local phys = self:GetPhysicsObject()
 		if phys:IsValid() then
-			print("Waking!")
 			phys:Wake()
+			print(phys:IsMoveable())
 		end
+		self:GetPhysicsObject():EnableMotion( false ) -- DON'T MOVE!
 
 		
 	end
 end
 
-function ENT:Touch( ent )
+function ENT:StartTouch( ent )
 	ent:SetPos(Vector(0,0,0))
 end
 
-function ENT:EndTouch()
-	
-end
+
 
 
 if CLIENT then 
@@ -63,4 +66,16 @@ if CLIENT then
 		render.DrawSphere(self:GetPos(), self.Radius, self.longSteps, self.latSteps, Color(255,255,255,255))
 	end
 	
+end
+
+function ENT:CanTool()
+	return false -- So the ent cannot be tooled ( parent, rope etc )
+end
+
+function ENT:GravGunPunt()
+	return false -- So the player can't move the planet
+end
+
+function ENT:GravGunPickupAllowed()
+	return false -- So the player can't pick the planet up and run off with it.
 end
