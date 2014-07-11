@@ -5,7 +5,12 @@ include("/classes/Planet.lua")
 
 
 --local disabled = true
-local disabled = true
+local disabled = false
+function GM:PreDrawSkyBox( )
+	print("hmmm")
+	render.MaterialOverride(Material("spawnicons/models/beer/wiremod/gate_e2.png", "noclamp smooth" ))
+end
+
 hook.Add("CellRender", "Planet Rendering", function()
 	--
 	--Is the player in a planet?
