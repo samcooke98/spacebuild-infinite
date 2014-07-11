@@ -9,10 +9,15 @@ GM.Email 	= "Don't"
 include("/player_classes/base_player.lua")
 include("/player_classes/human_player.lua")
 
+include("sh_planetmanager.lua")
+
+
+
+
 --Functions
 function GM:PlayerSpawn( ply )
 	player_manager.SetPlayerClass( ply, "player_sb_human" )
-	print("A player has spawned");
+	--print("A player has spawned");
 	
 	player_manager.OnPlayerSpawn( ply )
 	player_manager.RunClass( ply, "Spawn" )
@@ -40,4 +45,6 @@ function GM:PhysgunPickup( ply, ent)
 			return false
 		end
 	end
+	return true
 end
+

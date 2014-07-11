@@ -1210,7 +1210,7 @@ xpcall(function()
 		if !ply.Cells then MapRepeat.SetCell(ply,"0 0 0") end
 		MapRepeat.SetCell(ent,ply.Cells[1])
 	elseif MapRepeat and ent:IsWeapon() then
-		print(ent)
+		--print(ent)
 		MapRepeat.ClaimWep(ent)
 	end
 	if IsValid(ply) and GH.SHIPS[ply.InShip or ply.MyShip] then

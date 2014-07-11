@@ -2,12 +2,13 @@ MapRepeat.Sync = MapRepeat.Sync or {}
 MapRepeat.RGen = MapRepeat.RGen or {}
 MapRepeat.Cells = MapRepeat.Cells or {}
 
+--General Function that convert's Cell a string to table.
 function MapRepeat.CellToArray(cell)
 	
 	if !cell then return end
 	local c = {}
 	
-	--if CLIENT then print(tostring(cell)) end
+	--if CLIENT then --print(tostring(cell)) end
 	local i = string.find(tostring(cell),' ')
 	c[1] = string.sub(tostring(cell),1,i-1)
 	c[2] = string.sub(tostring(cell),i+1,string.find(tostring(cell),' ',i+1)-1)
@@ -16,8 +17,10 @@ function MapRepeat.CellToArray(cell)
 end
 local srv_genned = {}
 
+--Generate Cells, decide what need to be in what cells. 
+--TODO: Improve Readibility of the variables & Add a new token for range
 function MapRepeat.GenCell(cell)
-	print("GenCell Called")
+	--print("GenCell Called")
 	if !cell then return end
 	local c = MapRepeat.CellToArray(cell)
 	MapRepeat.Cells[cell] = MapRepeat.Cells[cell] or {}
@@ -61,17 +64,25 @@ function MapRepeat.GenCell(cell)
 		end
 	end
 end
-function MapRepeat.InCell(e,cell)
-	if !IsEntity(e) then return end
+
+--- Is this Entity in this cell?
+-- @returns boolean, true or false.
+-- @param ent The Entity
+-- @param cell The Cell (Vector)
+function MapRepeat.InCell(ent,cell)
+	if !IsEntity(ent) then return end
 	if SERVER then 
-		if !e.Cells then return false end
-		for _,c in pairs(e.Cells) do
+		if !ent.Cells then return false end
+		for _,c in pairs(ent.Cells) do
 			if c == cell then return true end
 		end
 		return false
-	else return (MapRepeat.Cells[cell] and (MapRepeat.Cells[cell][e] or MapRepeat.Cells[cell][e:EntIndex()])) or MapRepeat.CelledEnts[e] == cell or MapRepeat.CelledEnts[e:EntIndex()] == cell end
+	else return (MapRepeat.Cells[cell] and (MapRepeat.Cells[cell][ent] or MapRepeat.Cells[cell][ent:EntIndex()])) or MapRepeat.CelledEnts[ent] == cell or MapRepeat.CelledEnts[ent:EntIndex()] == cell end
 end
+
+-- Not sure, internal function?
 function MapRepeat.CellToPos(_pos,cell)
+	
 	local pos = _pos
 	local c = MapRepeat.CellToArray(cell)
 	if !c then return pos end
@@ -84,7 +95,7 @@ function MapRepeat.CellToPos(_pos,cell)
 	pos.z = pos.z + (cz * (tonumber(c[3]) or 0))
 	return pos
 end
-
+--Not sure again...
 function MapRepeat.PosToCell(_pos,_pos2)
 	local pos,pos2 = _pos,_pos2
 	local s = MapRepeat.Sync
@@ -111,9 +122,11 @@ function MapRepeat.PosToCell(_pos,_pos2)
 	if z == -0 then z = 0 end
 	return x..' '..y..' '..z, pos,pos2
 end
+
 if !util.RealTraceLine then
 	util.RealTraceLine = util.TraceLine
 end
+
 function util.TraceLine(_tr)
 	if !MapRepeat then
 		util.TraceLine = util.RealTraceLine

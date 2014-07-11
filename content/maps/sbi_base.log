@@ -3,6 +3,9 @@
 
 materialPath: D:\steam\steamapps\common\Counter-Strike Source\cstrike\materials
 Loading D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.vmf
+Brush 13308: bounds out of range
+Brush 13310: bounds out of range
+Brush 13314: bounds out of range
 Could not locate 'GameData' key in d:\steam\steamapps\common\counter-strike source\cstrike\gameinfo.txt
 fixing up env_cubemap materials on brush sides...
 0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
@@ -13,23 +16,36 @@ WriteBSP...
 done (0)
 writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt...Building visibility clusters...
 done (0)
-Creating default LDR cubemaps for env_cubemap using skybox materials:
-   skybox/starbox_*.vmt
- ! Run buildcubemaps in the engine to get the correct cube maps.
-Creating default HDR cubemaps for env_cubemap using skybox materials:
-   skybox/starbox_*.vmt
- ! Run buildcubemaps in the engine to get the correct cube maps.
-Finding displacement neighbors...
-Finding lightmap sample positions...
-Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
-Building Physics collision data...
-done (5) (6209 bytes)
-Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
-Compacting texture/material tables...
-Reduced 26 texinfos to 19
-Reduced 3 texdatas to 3 (61 bytes to 61)
-Writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-5 seconds elapsed
+
+
+
+8 threads
+reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+Error opening d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+
+
+[Reading texlights from 'lights.rad']
+[2 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+Error opening d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+
+
+materialPath: D:\steam\steamapps\common\Counter-Strike Source\cstrike\materials
+Loading D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.vmf
+Brush 13308: bounds out of range
+Brush 13310: bounds out of range
+Brush 13314: bounds out of range
+Could not locate 'GameData' key in d:\steam\steamapps\common\counter-strike source\cstrike\gameinfo.txt
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt...Building visibility clusters...
+done (0)
 
 
 
@@ -53,17 +69,17 @@ writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\conte
 [2 texlights parsed from 'lights.rad']
 
 Loading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-2452 faces
-136693984 square feet [19683934208.00 square inches]
+8708 faces
+146990592 square feet [21166645248.00 square inches]
 0 Displacements
 0 Square Feet [0.00 Square Inches]
-2452 patches before subdivision
-27540 patches after subdivision
+8708 patches before subdivision
+802116 patches after subdivision
 2 direct lights
 0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 0, max 0
 transfer lists:   0.0 megs
 0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(0, 0, 0)
-Build Patch/Sample Hash Table(s).....Done<0.0110 sec>
+Build Patch/Sample Hash Table(s).....Done<0.8086 sec>
 0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
 0 of 0 (0% of) surface lights went in leaf ambient cubes.
 0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
@@ -74,8 +90,8 @@ Object names       Objects/Maxobjs  Memory / Maxmem  Fullness
 models                   8/1024          384/49152    ( 0.8%) 
 brushes                 13/8192          156/98304    ( 0.2%) 
 brushsides              78/65536         624/524288   ( 0.1%) 
-planes                 204/65536        4080/1310720  ( 0.3%) 
-vertexes              2521/65536       30252/786432   ( 3.8%) 
+planes                 196/65536        3920/1310720  ( 0.3%) 
+vertexes              8961/65536      107532/786432   (13.7%) 
 nodes                 3341/65536      106912/2097152  ( 5.1%) 
 texinfos                19/12288        1368/884736   ( 0.2%) 
 texdata                  3/2048           96/65536    ( 0.1%) 
@@ -83,15 +99,15 @@ dispinfos                0/0               0/0        ( 0.0%)
 disp_verts               0/0               0/0        ( 0.0%) 
 disp_tris                0/0               0/0        ( 0.0%) 
 disp_lmsamples           0/0               0/0        ( 0.0%) 
-faces                 2452/65536      137312/3670016  ( 3.7%) 
+faces                 8708/65536      487648/3670016  (13.3%) 
 hdr faces                0/65536           0/3670016  ( 0.0%) 
 origfaces               48/65536        2688/3670016  ( 0.1%) 
 leaves                3350/65536      107200/2097152  ( 5.1%) 
-leaffaces             2452/65536        4904/131072   ( 3.7%) 
+leaffaces             8708/65536       17416/131072   (13.3%) 
 leafbrushes           2183/65536        4366/131072   ( 3.3%) 
 areas                    2/256            16/2048     ( 0.8%) 
-surfedges            10072/512000      40288/2048000  ( 2.0%) 
-edges                 5049/256000      20196/1024000  ( 2.0%) 
+surfedges            35464/512000     141856/2048000  ( 6.9%) 
+edges                17745/256000      70980/1024000  ( 6.9%) 
 LDR worldlights          2/8192          176/720896   ( 0.0%) 
 HDR worldlights          0/8192            0/720896   ( 0.0%) 
 leafwaterdata            0/32768           0/393216   ( 0.0%) 
@@ -100,10 +116,10 @@ waterverts               0/65536           0/786432   ( 0.0%)
 waterindices             0/65536           0/131072   ( 0.0%) 
 cubemapsamples           0/1024            0/16384    ( 0.0%) 
 overlays                 0/512             0/180224   ( 0.0%) 
-LDR lightdata         [variable]      801648/0        ( 0.0%) 
+LDR lightdata         [variable]    27037232/0        ( 0.0%) 
 HDR lightdata         [variable]           0/0        ( 0.0%) 
 visdata               [variable]      270340/16777216 ( 1.6%) 
-entdata               [variable]        5485/393216   ( 1.4%) 
+entdata               [variable]        3498/393216   ( 0.9%) 
 LDR ambient table     3350/65536       13400/262144   ( 5.1%) 
 HDR ambient table     3350/65536       13400/262144   ( 5.1%) 
 LDR leaf ambient      1066/65536       29848/1835008  ( 1.6%) 
@@ -114,14 +130,816 @@ occluder vert ind        0/0               0/0        ( 0.0%)
 detail props          [variable]           1/12       ( 8.3%) 
 static props          [variable]           1/12       ( 8.3%) 
 pakfile               [variable]       81870/0        ( 0.0%) 
-physics               [variable]        6209/4194304  ( 0.1%) 
+physics               [variable]        6274/4194304  ( 0.1%) 
 physics terrain       [variable]           2/1048576  ( 0.0%) 
 
 Level flags = 0
 
-Total triangle count: 4976
+Total triangle count: 17856
 Writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-17 seconds elapsed
+58 seconds elapsed
+
+
+
+materialPath: D:\steam\steamapps\common\Counter-Strike Source\cstrike\materials
+Loading D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.vmf
+Brush 13308: bounds out of range
+Brush 13310: bounds out of range
+Brush 13314: bounds out of range
+Could not locate 'GameData' key in d:\steam\steamapps\common\counter-strike source\cstrike\gameinfo.txt
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt...Building visibility clusters...
+done (0)
+
+
+
+8 threads
+reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt
+1024 portalclusters
+1984 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 1048576
+Average clusters visible: 1024
+Building PAS...
+Average clusters audible: 1024
+visdatasize:270340  compressed from 262144
+writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[2 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+8708 faces
+146990592 square feet [21166645248.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+8708 patches before subdivision
+802116 patches after subdivision
+2 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 0, max 0
+transfer lists:   0.0 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(0, 0, 0)
+Build Patch/Sample Hash Table(s).....Done<0.8643 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                   8/1024          384/49152    ( 0.8%) 
+brushes                 13/8192          156/98304    ( 0.2%) 
+brushsides              78/65536         624/524288   ( 0.1%) 
+planes                 196/65536        3920/1310720  ( 0.3%) 
+vertexes              8961/65536      107532/786432   (13.7%) 
+nodes                 3341/65536      106912/2097152  ( 5.1%) 
+texinfos                19/12288        1368/884736   ( 0.2%) 
+texdata                  3/2048           96/65536    ( 0.1%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                 8708/65536      487648/3670016  (13.3%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               48/65536        2688/3670016  ( 0.1%) 
+leaves                3350/65536      107200/2097152  ( 5.1%) 
+leaffaces             8708/65536       17416/131072   (13.3%) 
+leafbrushes           2183/65536        4366/131072   ( 3.3%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges            35464/512000     141856/2048000  ( 6.9%) 
+edges                17745/256000      70980/1024000  ( 6.9%) 
+LDR worldlights          2/8192          176/720896   ( 0.0%) 
+HDR worldlights          0/8192            0/720896   ( 0.0%) 
+leafwaterdata            0/32768           0/393216   ( 0.0%) 
+waterstrips              0/32768           0/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices             0/65536           0/131072   ( 0.0%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]    27037232/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]      270340/16777216 ( 1.6%) 
+entdata               [variable]        3498/393216   ( 0.9%) 
+LDR ambient table     3350/65536       13400/262144   ( 5.1%) 
+HDR ambient table     3350/65536       13400/262144   ( 5.1%) 
+LDR leaf ambient      1066/65536       29848/1835008  ( 1.6%) 
+HDR leaf ambient      3350/65536       93800/1835008  ( 5.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/12       ( 8.3%) 
+pakfile               [variable]       81870/0        ( 0.0%) 
+physics               [variable]        6274/4194304  ( 0.1%) 
+physics terrain       [variable]           2/1048576  ( 0.0%) 
+
+Level flags = 0
+
+Total triangle count: 17856
+Writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+59 seconds elapsed
+
+
+
+materialPath: D:\steam\steamapps\common\Counter-Strike Source\cstrike\materials
+Loading D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.vmf
+ConVarRef mat_reduceparticles doesn't point to an existing ConVar
+Brush 13308: bounds out of range
+Brush 13310: bounds out of range
+Brush 13314: bounds out of range
+Could not locate 'GameData' key in d:\steam\steamapps\common\counter-strike source\cstrike\gameinfo.txt
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt...Building visibility clusters...
+done (0)
+
+
+
+8 threads
+reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt
+1032 portalclusters
+2013 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 1065024
+Average clusters visible: 1032
+Building PAS...
+Average clusters audible: 1032
+visdatasize:274516  compressed from 280704
+writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[2 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+8708 faces
+146990592 square feet [21166645248.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+8708 patches before subdivision
+802116 patches after subdivision
+2 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 0, max 0
+transfer lists:   0.0 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(0, 0, 0)
+Build Patch/Sample Hash Table(s).....Done<0.9176 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                   8/1024          384/49152    ( 0.8%) 
+brushes                 13/8192          156/98304    ( 0.2%) 
+brushsides              78/65536         624/524288   ( 0.1%) 
+planes                 196/65536        3920/1310720  ( 0.3%) 
+vertexes              8961/65536      107532/786432   (13.7%) 
+nodes                 3341/65536      106912/2097152  ( 5.1%) 
+texinfos                19/12288        1368/884736   ( 0.2%) 
+texdata                  3/2048           96/65536    ( 0.1%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                 8708/65536      487648/3670016  (13.3%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               48/65536        2688/3670016  ( 0.1%) 
+leaves                3350/65536      107200/2097152  ( 5.1%) 
+leaffaces             8708/65536       17416/131072   (13.3%) 
+leafbrushes           2183/65536        4366/131072   ( 3.3%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges            35464/512000     141856/2048000  ( 6.9%) 
+edges                17745/256000      70980/1024000  ( 6.9%) 
+LDR worldlights          2/8192          176/720896   ( 0.0%) 
+HDR worldlights          0/8192            0/720896   ( 0.0%) 
+leafwaterdata            0/32768           0/393216   ( 0.0%) 
+waterstrips              0/32768           0/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices             0/65536           0/131072   ( 0.0%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]    27037232/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]      274516/16777216 ( 1.6%) 
+entdata               [variable]        3498/393216   ( 0.9%) 
+LDR ambient table     3350/65536       13400/262144   ( 5.1%) 
+HDR ambient table     3350/65536       13400/262144   ( 5.1%) 
+LDR leaf ambient      1066/65536       29848/1835008  ( 1.6%) 
+HDR leaf ambient      3350/65536       93800/1835008  ( 5.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/12       ( 8.3%) 
+pakfile               [variable]       81870/0        ( 0.0%) 
+physics               [variable]        6274/4194304  ( 0.1%) 
+physics terrain       [variable]           2/1048576  ( 0.0%) 
+
+Level flags = 0
+
+Total triangle count: 17856
+Writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+1 minute, 1 second elapsed
+
+
+
+materialPath: D:\steam\steamapps\common\Counter-Strike Source\cstrike\materials
+Loading D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.vmf
+ConVarRef mat_reduceparticles doesn't point to an existing ConVar
+Brush 13308: bounds out of range
+Brush 13310: bounds out of range
+Brush 13314: bounds out of range
+Could not locate 'GameData' key in d:\steam\steamapps\common\counter-strike source\cstrike\gameinfo.txt
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt...Building visibility clusters...
+done (0)
+
+
+
+8 threads
+reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt
+1032 portalclusters
+2013 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 1065024
+Average clusters visible: 1032
+Building PAS...
+Average clusters audible: 1032
+visdatasize:274516  compressed from 280704
+writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[2 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+8708 faces
+146990592 square feet [21166645248.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+8708 patches before subdivision
+802116 patches after subdivision
+2 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 0, max 0
+transfer lists:   0.0 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(0, 0, 0)
+Build Patch/Sample Hash Table(s).....Done<0.8217 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                   8/1024          384/49152    ( 0.8%) 
+brushes                 13/8192          156/98304    ( 0.2%) 
+brushsides              78/65536         624/524288   ( 0.1%) 
+planes                 196/65536        3920/1310720  ( 0.3%) 
+vertexes              8961/65536      107532/786432   (13.7%) 
+nodes                 3341/65536      106912/2097152  ( 5.1%) 
+texinfos                19/12288        1368/884736   ( 0.2%) 
+texdata                  3/2048           96/65536    ( 0.1%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                 8708/65536      487648/3670016  (13.3%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               48/65536        2688/3670016  ( 0.1%) 
+leaves                3350/65536      107200/2097152  ( 5.1%) 
+leaffaces             8708/65536       17416/131072   (13.3%) 
+leafbrushes           2183/65536        4366/131072   ( 3.3%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges            35464/512000     141856/2048000  ( 6.9%) 
+edges                17745/256000      70980/1024000  ( 6.9%) 
+LDR worldlights          2/8192          176/720896   ( 0.0%) 
+HDR worldlights          0/8192            0/720896   ( 0.0%) 
+leafwaterdata            0/32768           0/393216   ( 0.0%) 
+waterstrips              0/32768           0/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices             0/65536           0/131072   ( 0.0%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]    27037232/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]      274516/16777216 ( 1.6%) 
+entdata               [variable]        3498/393216   ( 0.9%) 
+LDR ambient table     3350/65536       13400/262144   ( 5.1%) 
+HDR ambient table     3350/65536       13400/262144   ( 5.1%) 
+LDR leaf ambient      1066/65536       29848/1835008  ( 1.6%) 
+HDR leaf ambient      3350/65536       93800/1835008  ( 5.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/12       ( 8.3%) 
+pakfile               [variable]       81870/0        ( 0.0%) 
+physics               [variable]        6274/4194304  ( 0.1%) 
+physics terrain       [variable]           2/1048576  ( 0.0%) 
+
+Level flags = 0
+
+Total triangle count: 17856
+Writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+58 seconds elapsed
+
+
+
+materialPath: D:\steam\steamapps\common\Counter-Strike Source\cstrike\materials
+Loading D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.vmf
+Brush 13308: bounds out of range
+Brush 13310: bounds out of range
+Brush 13314: bounds out of range
+Could not locate 'GameData' key in d:\steam\steamapps\common\counter-strike source\cstrike\gameinfo.txt
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt...Building visibility clusters...
+done (0)
+
+
+
+8 threads
+reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+Error opening d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+
+
+[Reading texlights from 'lights.rad']
+[2 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+Error opening d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+
+
+materialPath: D:\steam\steamapps\common\Counter-Strike Source\cstrike\materials
+Loading D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.vmf
+Brush 13308: bounds out of range
+Brush 13310: bounds out of range
+Brush 13314: bounds out of range
+Could not locate 'GameData' key in d:\steam\steamapps\common\counter-strike source\cstrike\gameinfo.txt
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt...Building visibility clusters...
+done (0)
+
+
+
+8 threads
+reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt
+1024 portalclusters
+1984 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 1048576
+Average clusters visible: 1024
+Building PAS...
+Average clusters audible: 1024
+visdatasize:270340  compressed from 262144
+writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[2 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+8708 faces
+146990592 square feet [21166645248.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+8708 patches before subdivision
+802116 patches after subdivision
+2 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 0, max 0
+transfer lists:   0.0 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(0, 0, 0)
+Build Patch/Sample Hash Table(s).....Done<0.8460 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                   8/1024          384/49152    ( 0.8%) 
+brushes                 13/8192          156/98304    ( 0.2%) 
+brushsides              78/65536         624/524288   ( 0.1%) 
+planes                 196/65536        3920/1310720  ( 0.3%) 
+vertexes              8961/65536      107532/786432   (13.7%) 
+nodes                 3341/65536      106912/2097152  ( 5.1%) 
+texinfos                19/12288        1368/884736   ( 0.2%) 
+texdata                  3/2048           96/65536    ( 0.1%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                 8708/65536      487648/3670016  (13.3%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               48/65536        2688/3670016  ( 0.1%) 
+leaves                3350/65536      107200/2097152  ( 5.1%) 
+leaffaces             8708/65536       17416/131072   (13.3%) 
+leafbrushes           2183/65536        4366/131072   ( 3.3%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges            35464/512000     141856/2048000  ( 6.9%) 
+edges                17745/256000      70980/1024000  ( 6.9%) 
+LDR worldlights          2/8192          176/720896   ( 0.0%) 
+HDR worldlights          0/8192            0/720896   ( 0.0%) 
+leafwaterdata            0/32768           0/393216   ( 0.0%) 
+waterstrips              0/32768           0/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices             0/65536           0/131072   ( 0.0%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]    27037232/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]      270340/16777216 ( 1.6%) 
+entdata               [variable]        3498/393216   ( 0.9%) 
+LDR ambient table     3350/65536       13400/262144   ( 5.1%) 
+HDR ambient table     3350/65536       13400/262144   ( 5.1%) 
+LDR leaf ambient      1066/65536       29848/1835008  ( 1.6%) 
+HDR leaf ambient      3350/65536       93800/1835008  ( 5.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/12       ( 8.3%) 
+pakfile               [variable]       81870/0        ( 0.0%) 
+physics               [variable]        6274/4194304  ( 0.1%) 
+physics terrain       [variable]           2/1048576  ( 0.0%) 
+
+Level flags = 0
+
+Total triangle count: 17856
+Writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+59 seconds elapsed
+
+
+
+materialPath: D:\steam\steamapps\common\Counter-Strike Source\cstrike\materials
+Loading D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.vmf
+Brush 13308: bounds out of range
+Brush 13310: bounds out of range
+Brush 13314: bounds out of range
+Could not locate 'GameData' key in d:\steam\steamapps\common\counter-strike source\cstrike\gameinfo.txt
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt...Building visibility clusters...
+done (0)
+
+
+
+8 threads
+reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt
+1024 portalclusters
+1984 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 1048576
+Average clusters visible: 1024
+Building PAS...
+Average clusters audible: 1024
+visdatasize:270340  compressed from 262144
+writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[2 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+8708 faces
+146990592 square feet [21166645248.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+8708 patches before subdivision
+802116 patches after subdivision
+2 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 0, max 0
+transfer lists:   0.0 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(0, 0, 0)
+Build Patch/Sample Hash Table(s).....Done<0.9667 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                   8/1024          384/49152    ( 0.8%) 
+brushes                 13/8192          156/98304    ( 0.2%) 
+brushsides              78/65536         624/524288   ( 0.1%) 
+planes                 196/65536        3920/1310720  ( 0.3%) 
+vertexes              8961/65536      107532/786432   (13.7%) 
+nodes                 3341/65536      106912/2097152  ( 5.1%) 
+texinfos                19/12288        1368/884736   ( 0.2%) 
+texdata                  3/2048           96/65536    ( 0.1%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                 8708/65536      487648/3670016  (13.3%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               48/65536        2688/3670016  ( 0.1%) 
+leaves                3350/65536      107200/2097152  ( 5.1%) 
+leaffaces             8708/65536       17416/131072   (13.3%) 
+leafbrushes           2183/65536        4366/131072   ( 3.3%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges            35464/512000     141856/2048000  ( 6.9%) 
+edges                17745/256000      70980/1024000  ( 6.9%) 
+LDR worldlights          2/8192          176/720896   ( 0.0%) 
+HDR worldlights          0/8192            0/720896   ( 0.0%) 
+leafwaterdata            0/32768           0/393216   ( 0.0%) 
+waterstrips              0/32768           0/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices             0/65536           0/131072   ( 0.0%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]    27037232/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]      270340/16777216 ( 1.6%) 
+entdata               [variable]        3498/393216   ( 0.9%) 
+LDR ambient table     3350/65536       13400/262144   ( 5.1%) 
+HDR ambient table     3350/65536       13400/262144   ( 5.1%) 
+LDR leaf ambient      1066/65536       29848/1835008  ( 1.6%) 
+HDR leaf ambient      3350/65536       93800/1835008  ( 5.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/12       ( 8.3%) 
+pakfile               [variable]       81870/0        ( 0.0%) 
+physics               [variable]        6274/4194304  ( 0.1%) 
+physics terrain       [variable]           2/1048576  ( 0.0%) 
+
+Level flags = 0
+
+Total triangle count: 17856
+Writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+59 seconds elapsed
+
+
+
+materialPath: D:\steam\steamapps\common\Counter-Strike Source\cstrike\materials
+Loading D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.vmf
+Brush 13308: bounds out of range
+Brush 13310: bounds out of range
+Brush 13314: bounds out of range
+Could not locate 'GameData' key in d:\steam\steamapps\common\counter-strike source\cstrike\gameinfo.txt
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt...Building visibility clusters...
+done (0)
+
+
+
+8 threads
+reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt
+1024 portalclusters
+1984 numportals
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 1048576
+Average clusters visible: 1024
+Building PAS...
+Average clusters audible: 1024
+visdatasize:270340  compressed from 262144
+writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+48 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[2 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+8708 faces
+146990592 square feet [21166645248.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+8708 patches before subdivision
+802116 patches after subdivision
+2 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 0, max 0
+transfer lists:   0.0 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(0, 0, 0)
+Build Patch/Sample Hash Table(s).....Done<0.8120 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                   8/1024          384/49152    ( 0.8%) 
+brushes                 13/8192          156/98304    ( 0.2%) 
+brushsides              78/65536         624/524288   ( 0.1%) 
+planes                 196/65536        3920/1310720  ( 0.3%) 
+vertexes              8961/65536      107532/786432   (13.7%) 
+nodes                 3341/65536      106912/2097152  ( 5.1%) 
+texinfos                19/12288        1368/884736   ( 0.2%) 
+texdata                  3/2048           96/65536    ( 0.1%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                 8708/65536      487648/3670016  (13.3%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               48/65536        2688/3670016  ( 0.1%) 
+leaves                3350/65536      107200/2097152  ( 5.1%) 
+leaffaces             8708/65536       17416/131072   (13.3%) 
+leafbrushes           2183/65536        4366/131072   ( 3.3%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges            35464/512000     141856/2048000  ( 6.9%) 
+edges                17745/256000      70980/1024000  ( 6.9%) 
+LDR worldlights          2/8192          176/720896   ( 0.0%) 
+HDR worldlights          0/8192            0/720896   ( 0.0%) 
+leafwaterdata            0/32768           0/393216   ( 0.0%) 
+waterstrips              0/32768           0/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices             0/65536           0/131072   ( 0.0%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]    27037232/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]      270340/16777216 ( 1.6%) 
+entdata               [variable]        3498/393216   ( 0.9%) 
+LDR ambient table     3350/65536       13400/262144   ( 5.1%) 
+HDR ambient table     3350/65536       13400/262144   ( 5.1%) 
+LDR leaf ambient      1066/65536       29848/1835008  ( 1.6%) 
+HDR leaf ambient      3350/65536       93800/1835008  ( 5.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/12       ( 8.3%) 
+pakfile               [variable]       81870/0        ( 0.0%) 
+physics               [variable]        6274/4194304  ( 0.1%) 
+physics terrain       [variable]           2/1048576  ( 0.0%) 
+
+Level flags = 0
+
+Total triangle count: 17856
+Writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+1 minute, 2 seconds elapsed
+
+
+
+materialPath: D:\steam\steamapps\common\Counter-Strike Source\cstrike\materials
+Loading D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.vmf
+Brush 13308: bounds out of range
+Brush 13310: bounds out of range
+Brush 13314: bounds out of range
+Could not locate 'GameData' key in d:\steam\steamapps\common\counter-strike source\cstrike\gameinfo.txt
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt...Building visibility clusters...
+done (0)
+
+
+
+8 threads
+reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt
+1024 portalclusters
+1984 numportals
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 1048576
+Average clusters visible: 1024
+Building PAS...
+Average clusters audible: 1024
+visdatasize:270340  compressed from 262144
+writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+49 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[2 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+8708 faces
+146990592 square feet [21166645248.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+8708 patches before subdivision
+802116 patches after subdivision
+2 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 0, max 0
+transfer lists:   0.0 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(0, 0, 0)
+Build Patch/Sample Hash Table(s).....Done<0.9138 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                   8/1024          384/49152    ( 0.8%) 
+brushes                 13/8192          156/98304    ( 0.2%) 
+brushsides              78/65536         624/524288   ( 0.1%) 
+planes                 196/65536        3920/1310720  ( 0.3%) 
+vertexes              8961/65536      107532/786432   (13.7%) 
+nodes                 3341/65536      106912/2097152  ( 5.1%) 
+texinfos                19/12288        1368/884736   ( 0.2%) 
+texdata                  3/2048           96/65536    ( 0.1%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                 8708/65536      487648/3670016  (13.3%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               48/65536        2688/3670016  ( 0.1%) 
+leaves                3350/65536      107200/2097152  ( 5.1%) 
+leaffaces             8708/65536       17416/131072   (13.3%) 
+leafbrushes           2183/65536        4366/131072   ( 3.3%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges            35464/512000     141856/2048000  ( 6.9%) 
+edges                17745/256000      70980/1024000  ( 6.9%) 
+LDR worldlights          2/8192          176/720896   ( 0.0%) 
+HDR worldlights          0/8192            0/720896   ( 0.0%) 
+leafwaterdata            0/32768           0/393216   ( 0.0%) 
+waterstrips              0/32768           0/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices             0/65536           0/131072   ( 0.0%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]    27037232/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]      270340/16777216 ( 1.6%) 
+entdata               [variable]        3498/393216   ( 0.9%) 
+LDR ambient table     3350/65536       13400/262144   ( 5.1%) 
+HDR ambient table     3350/65536       13400/262144   ( 5.1%) 
+LDR leaf ambient      1066/65536       29848/1835008  ( 1.6%) 
+HDR leaf ambient      3350/65536       93800/1835008  ( 5.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/12       ( 8.3%) 
+pakfile               [variable]       81870/0        ( 0.0%) 
+physics               [variable]        6274/4194304  ( 0.1%) 
+physics terrain       [variable]           2/1048576  ( 0.0%) 
+
+Level flags = 0
+
+Total triangle count: 17856
+Writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+1 minute, 3 seconds elapsed
 
 
 
@@ -147,13 +965,13 @@ Finding displacement neighbors...
 Finding lightmap sample positions...
 Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
 Building Physics collision data...
-done (5) (6209 bytes)
+done (6) (6272 bytes)
 Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
 Compacting texture/material tables...
 Reduced 26 texinfos to 19
 Reduced 3 texdatas to 3 (61 bytes to 61)
 Writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-5 seconds elapsed
+6 seconds elapsed
 
 
 
@@ -162,14 +980,14 @@ reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\conte
 reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt
 1024 portalclusters
 1984 numportals
-0...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
 Total clusters visible: 1048576
 Average clusters visible: 1024
 Building PAS...
 Average clusters audible: 1024
 visdatasize:270340  compressed from 262144
 writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-0 seconds elapsed
+48 seconds elapsed
 
 
 
@@ -177,12 +995,12 @@ writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\conte
 [2 texlights parsed from 'lights.rad']
 
 Loading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-2452 faces
-136693984 square feet [19683934208.00 square inches]
+2474 faces
+136718880 square feet [19687518208.00 square inches]
 0 Displacements
 0 Square Feet [0.00 Square Inches]
-2452 patches before subdivision
-27540 patches after subdivision
+2474 patches before subdivision
+29358 patches after subdivision
 2 direct lights
 0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 0, max 0
 transfer lists:   0.0 megs
@@ -198,8 +1016,8 @@ Object names       Objects/Maxobjs  Memory / Maxmem  Fullness
 models                   8/1024          384/49152    ( 0.8%) 
 brushes                 13/8192          156/98304    ( 0.2%) 
 brushsides              78/65536         624/524288   ( 0.1%) 
-planes                 204/65536        4080/1310720  ( 0.3%) 
-vertexes              2521/65536       30252/786432   ( 3.8%) 
+planes                 212/65536        4240/1310720  ( 0.3%) 
+vertexes              2543/65536       30516/786432   ( 3.9%) 
 nodes                 3341/65536      106912/2097152  ( 5.1%) 
 texinfos                19/12288        1368/884736   ( 0.2%) 
 texdata                  3/2048           96/65536    ( 0.1%) 
@@ -207,15 +1025,15 @@ dispinfos                0/0               0/0        ( 0.0%)
 disp_verts               0/0               0/0        ( 0.0%) 
 disp_tris                0/0               0/0        ( 0.0%) 
 disp_lmsamples           0/0               0/0        ( 0.0%) 
-faces                 2452/65536      137312/3670016  ( 3.7%) 
+faces                 2474/65536      138544/3670016  ( 3.8%) 
 hdr faces                0/65536           0/3670016  ( 0.0%) 
 origfaces               48/65536        2688/3670016  ( 0.1%) 
 leaves                3350/65536      107200/2097152  ( 5.1%) 
-leaffaces             2452/65536        4904/131072   ( 3.7%) 
+leaffaces             2474/65536        4948/131072   ( 3.8%) 
 leafbrushes           2183/65536        4366/131072   ( 3.3%) 
 areas                    2/256            16/2048     ( 0.8%) 
-surfedges            10072/512000      40288/2048000  ( 2.0%) 
-edges                 5049/256000      20196/1024000  ( 2.0%) 
+surfedges            10160/512000      40640/2048000  ( 2.0%) 
+edges                 5093/256000      20372/1024000  ( 2.0%) 
 LDR worldlights          2/8192          176/720896   ( 0.0%) 
 HDR worldlights          0/8192            0/720896   ( 0.0%) 
 leafwaterdata            0/32768           0/393216   ( 0.0%) 
@@ -224,10 +1042,10 @@ waterverts               0/65536           0/786432   ( 0.0%)
 waterindices             0/65536           0/131072   ( 0.0%) 
 cubemapsamples           0/1024            0/16384    ( 0.0%) 
 overlays                 0/512             0/180224   ( 0.0%) 
-LDR lightdata         [variable]      801648/0        ( 0.0%) 
+LDR lightdata         [variable]      866520/0        ( 0.0%) 
 HDR lightdata         [variable]           0/0        ( 0.0%) 
 visdata               [variable]      270340/16777216 ( 1.6%) 
-entdata               [variable]        5501/393216   ( 1.4%) 
+entdata               [variable]        3358/393216   ( 0.9%) 
 LDR ambient table     3350/65536       13400/262144   ( 5.1%) 
 HDR ambient table     3350/65536       13400/262144   ( 5.1%) 
 LDR leaf ambient      1066/65536       29848/1835008  ( 1.6%) 
@@ -238,12 +1056,12 @@ occluder vert ind        0/0               0/0        ( 0.0%)
 detail props          [variable]           1/12       ( 8.3%) 
 static props          [variable]           1/12       ( 8.3%) 
 pakfile               [variable]       81870/0        ( 0.0%) 
-physics               [variable]        6209/4194304  ( 0.1%) 
+physics               [variable]        6272/4194304  ( 0.1%) 
 physics terrain       [variable]           2/1048576  ( 0.0%) 
 
 Level flags = 0
 
-Total triangle count: 4976
+Total triangle count: 5020
 Writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
 17 seconds elapsed
 
@@ -271,379 +1089,7 @@ Finding displacement neighbors...
 Finding lightmap sample positions...
 Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
 Building Physics collision data...
-done (6) (6209 bytes)
-Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
-Compacting texture/material tables...
-Reduced 26 texinfos to 19
-Reduced 3 texdatas to 3 (61 bytes to 61)
-Writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-6 seconds elapsed
-
-
-
-8 threads
-reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt
-1024 portalclusters
-1984 numportals
-0...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
-Total clusters visible: 1048576
-Average clusters visible: 1024
-Building PAS...
-Average clusters audible: 1024
-visdatasize:270340  compressed from 262144
-writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-0 seconds elapsed
-
-
-
-[Reading texlights from 'lights.rad']
-[2 texlights parsed from 'lights.rad']
-
-Loading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-2452 faces
-136693984 square feet [19683934208.00 square inches]
-0 Displacements
-0 Square Feet [0.00 Square Inches]
-2452 patches before subdivision
-27540 patches after subdivision
-2 direct lights
-0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 0, max 0
-transfer lists:   0.0 megs
-0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(0, 0, 0)
-Build Patch/Sample Hash Table(s).....Done<0.0103 sec>
-0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
-0 of 0 (0% of) surface lights went in leaf ambient cubes.
-0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
-Ready to Finish
-
-Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
-------------       ---------------  ---------------  -------- 
-models                   8/1024          384/49152    ( 0.8%) 
-brushes                 13/8192          156/98304    ( 0.2%) 
-brushsides              78/65536         624/524288   ( 0.1%) 
-planes                 204/65536        4080/1310720  ( 0.3%) 
-vertexes              2521/65536       30252/786432   ( 3.8%) 
-nodes                 3341/65536      106912/2097152  ( 5.1%) 
-texinfos                19/12288        1368/884736   ( 0.2%) 
-texdata                  3/2048           96/65536    ( 0.1%) 
-dispinfos                0/0               0/0        ( 0.0%) 
-disp_verts               0/0               0/0        ( 0.0%) 
-disp_tris                0/0               0/0        ( 0.0%) 
-disp_lmsamples           0/0               0/0        ( 0.0%) 
-faces                 2452/65536      137312/3670016  ( 3.7%) 
-hdr faces                0/65536           0/3670016  ( 0.0%) 
-origfaces               48/65536        2688/3670016  ( 0.1%) 
-leaves                3350/65536      107200/2097152  ( 5.1%) 
-leaffaces             2452/65536        4904/131072   ( 3.7%) 
-leafbrushes           2183/65536        4366/131072   ( 3.3%) 
-areas                    2/256            16/2048     ( 0.8%) 
-surfedges            10072/512000      40288/2048000  ( 2.0%) 
-edges                 5049/256000      20196/1024000  ( 2.0%) 
-LDR worldlights          2/8192          176/720896   ( 0.0%) 
-HDR worldlights          0/8192            0/720896   ( 0.0%) 
-leafwaterdata            0/32768           0/393216   ( 0.0%) 
-waterstrips              0/32768           0/327680   ( 0.0%) 
-waterverts               0/65536           0/786432   ( 0.0%) 
-waterindices             0/65536           0/131072   ( 0.0%) 
-cubemapsamples           0/1024            0/16384    ( 0.0%) 
-overlays                 0/512             0/180224   ( 0.0%) 
-LDR lightdata         [variable]      801648/0        ( 0.0%) 
-HDR lightdata         [variable]           0/0        ( 0.0%) 
-visdata               [variable]      270340/16777216 ( 1.6%) 
-entdata               [variable]        5550/393216   ( 1.4%) 
-LDR ambient table     3350/65536       13400/262144   ( 5.1%) 
-HDR ambient table     3350/65536       13400/262144   ( 5.1%) 
-LDR leaf ambient      1066/65536       29848/1835008  ( 1.6%) 
-HDR leaf ambient      3350/65536       93800/1835008  ( 5.1%) 
-occluders                0/0               0/0        ( 0.0%) 
-occluder polygons        0/0               0/0        ( 0.0%) 
-occluder vert ind        0/0               0/0        ( 0.0%) 
-detail props          [variable]           1/12       ( 8.3%) 
-static props          [variable]           1/12       ( 8.3%) 
-pakfile               [variable]       81870/0        ( 0.0%) 
-physics               [variable]        6209/4194304  ( 0.1%) 
-physics terrain       [variable]           2/1048576  ( 0.0%) 
-
-Level flags = 0
-
-Total triangle count: 4976
-Writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-16 seconds elapsed
-
-
-
-materialPath: D:\steam\steamapps\common\Counter-Strike Source\cstrike\materials
-Loading D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.vmf
-Could not locate 'GameData' key in d:\steam\steamapps\common\counter-strike source\cstrike\gameinfo.txt
-fixing up env_cubemap materials on brush sides...
-0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
-Building Faces...done (0)
-FixTjuncs...
-PruneNodes...
-WriteBSP...
-done (0)
-writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt...Building visibility clusters...
-done (0)
-Creating default LDR cubemaps for env_cubemap using skybox materials:
-   skybox/starbox_*.vmt
- ! Run buildcubemaps in the engine to get the correct cube maps.
-Creating default HDR cubemaps for env_cubemap using skybox materials:
-   skybox/starbox_*.vmt
- ! Run buildcubemaps in the engine to get the correct cube maps.
-Finding displacement neighbors...
-Finding lightmap sample positions...
-Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
-Building Physics collision data...
-done (6) (6209 bytes)
-Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
-Compacting texture/material tables...
-Reduced 26 texinfos to 19
-Reduced 3 texdatas to 3 (61 bytes to 61)
-Writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-6 seconds elapsed
-
-
-
-8 threads
-reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt
-1024 portalclusters
-1984 numportals
-0...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
-Total clusters visible: 1048576
-Average clusters visible: 1024
-Building PAS...
-Average clusters audible: 1024
-visdatasize:270340  compressed from 262144
-writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-0 seconds elapsed
-
-
-
-[Reading texlights from 'lights.rad']
-[2 texlights parsed from 'lights.rad']
-
-Loading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-2452 faces
-136693984 square feet [19683934208.00 square inches]
-0 Displacements
-0 Square Feet [0.00 Square Inches]
-2452 patches before subdivision
-27540 patches after subdivision
-2 direct lights
-0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 0, max 0
-transfer lists:   0.0 megs
-0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(0, 0, 0)
-Build Patch/Sample Hash Table(s).....Done<0.0104 sec>
-0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
-0 of 0 (0% of) surface lights went in leaf ambient cubes.
-0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
-Ready to Finish
-
-Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
-------------       ---------------  ---------------  -------- 
-models                   8/1024          384/49152    ( 0.8%) 
-brushes                 13/8192          156/98304    ( 0.2%) 
-brushsides              78/65536         624/524288   ( 0.1%) 
-planes                 204/65536        4080/1310720  ( 0.3%) 
-vertexes              2521/65536       30252/786432   ( 3.8%) 
-nodes                 3341/65536      106912/2097152  ( 5.1%) 
-texinfos                19/12288        1368/884736   ( 0.2%) 
-texdata                  3/2048           96/65536    ( 0.1%) 
-dispinfos                0/0               0/0        ( 0.0%) 
-disp_verts               0/0               0/0        ( 0.0%) 
-disp_tris                0/0               0/0        ( 0.0%) 
-disp_lmsamples           0/0               0/0        ( 0.0%) 
-faces                 2452/65536      137312/3670016  ( 3.7%) 
-hdr faces                0/65536           0/3670016  ( 0.0%) 
-origfaces               48/65536        2688/3670016  ( 0.1%) 
-leaves                3350/65536      107200/2097152  ( 5.1%) 
-leaffaces             2452/65536        4904/131072   ( 3.7%) 
-leafbrushes           2183/65536        4366/131072   ( 3.3%) 
-areas                    2/256            16/2048     ( 0.8%) 
-surfedges            10072/512000      40288/2048000  ( 2.0%) 
-edges                 5049/256000      20196/1024000  ( 2.0%) 
-LDR worldlights          2/8192          176/720896   ( 0.0%) 
-HDR worldlights          0/8192            0/720896   ( 0.0%) 
-leafwaterdata            0/32768           0/393216   ( 0.0%) 
-waterstrips              0/32768           0/327680   ( 0.0%) 
-waterverts               0/65536           0/786432   ( 0.0%) 
-waterindices             0/65536           0/131072   ( 0.0%) 
-cubemapsamples           0/1024            0/16384    ( 0.0%) 
-overlays                 0/512             0/180224   ( 0.0%) 
-LDR lightdata         [variable]      801648/0        ( 0.0%) 
-HDR lightdata         [variable]           0/0        ( 0.0%) 
-visdata               [variable]      270340/16777216 ( 1.6%) 
-entdata               [variable]        5550/393216   ( 1.4%) 
-LDR ambient table     3350/65536       13400/262144   ( 5.1%) 
-HDR ambient table     3350/65536       13400/262144   ( 5.1%) 
-LDR leaf ambient      1066/65536       29848/1835008  ( 1.6%) 
-HDR leaf ambient      3350/65536       93800/1835008  ( 5.1%) 
-occluders                0/0               0/0        ( 0.0%) 
-occluder polygons        0/0               0/0        ( 0.0%) 
-occluder vert ind        0/0               0/0        ( 0.0%) 
-detail props          [variable]           1/12       ( 8.3%) 
-static props          [variable]           1/12       ( 8.3%) 
-pakfile               [variable]       81870/0        ( 0.0%) 
-physics               [variable]        6209/4194304  ( 0.1%) 
-physics terrain       [variable]           2/1048576  ( 0.0%) 
-
-Level flags = 0
-
-Total triangle count: 4976
-Writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-16 seconds elapsed
-
-
-
-materialPath: D:\steam\steamapps\common\Counter-Strike Source\cstrike\materials
-Loading D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.vmf
-Could not locate 'GameData' key in d:\steam\steamapps\common\counter-strike source\cstrike\gameinfo.txt
-fixing up env_cubemap materials on brush sides...
-0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
-Building Faces...done (0)
-FixTjuncs...
-PruneNodes...
-WriteBSP...
-done (0)
-writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt...Building visibility clusters...
-done (0)
-Creating default LDR cubemaps for env_cubemap using skybox materials:
-   skybox/starbox_*.vmt
- ! Run buildcubemaps in the engine to get the correct cube maps.
-Creating default HDR cubemaps for env_cubemap using skybox materials:
-   skybox/starbox_*.vmt
- ! Run buildcubemaps in the engine to get the correct cube maps.
-Finding displacement neighbors...
-Finding lightmap sample positions...
-Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
-Building Physics collision data...
-done (6) (6209 bytes)
-Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
-Compacting texture/material tables...
-Reduced 26 texinfos to 19
-Reduced 3 texdatas to 3 (61 bytes to 61)
-Writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-6 seconds elapsed
-
-
-
-8 threads
-reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt
-1024 portalclusters
-1984 numportals
-0...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
-Total clusters visible: 1048576
-Average clusters visible: 1024
-Building PAS...
-Average clusters audible: 1024
-visdatasize:270340  compressed from 262144
-writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-0 seconds elapsed
-
-
-
-[Reading texlights from 'lights.rad']
-[2 texlights parsed from 'lights.rad']
-
-Loading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-2452 faces
-136693984 square feet [19683934208.00 square inches]
-0 Displacements
-0 Square Feet [0.00 Square Inches]
-2452 patches before subdivision
-27540 patches after subdivision
-2 direct lights
-0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 0, max 0
-transfer lists:   0.0 megs
-0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(0, 0, 0)
-Build Patch/Sample Hash Table(s).....Done<0.0103 sec>
-0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
-0 of 0 (0% of) surface lights went in leaf ambient cubes.
-0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
-Ready to Finish
-
-Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
-------------       ---------------  ---------------  -------- 
-models                   8/1024          384/49152    ( 0.8%) 
-brushes                 13/8192          156/98304    ( 0.2%) 
-brushsides              78/65536         624/524288   ( 0.1%) 
-planes                 204/65536        4080/1310720  ( 0.3%) 
-vertexes              2521/65536       30252/786432   ( 3.8%) 
-nodes                 3341/65536      106912/2097152  ( 5.1%) 
-texinfos                19/12288        1368/884736   ( 0.2%) 
-texdata                  3/2048           96/65536    ( 0.1%) 
-dispinfos                0/0               0/0        ( 0.0%) 
-disp_verts               0/0               0/0        ( 0.0%) 
-disp_tris                0/0               0/0        ( 0.0%) 
-disp_lmsamples           0/0               0/0        ( 0.0%) 
-faces                 2452/65536      137312/3670016  ( 3.7%) 
-hdr faces                0/65536           0/3670016  ( 0.0%) 
-origfaces               48/65536        2688/3670016  ( 0.1%) 
-leaves                3350/65536      107200/2097152  ( 5.1%) 
-leaffaces             2452/65536        4904/131072   ( 3.7%) 
-leafbrushes           2183/65536        4366/131072   ( 3.3%) 
-areas                    2/256            16/2048     ( 0.8%) 
-surfedges            10072/512000      40288/2048000  ( 2.0%) 
-edges                 5049/256000      20196/1024000  ( 2.0%) 
-LDR worldlights          2/8192          176/720896   ( 0.0%) 
-HDR worldlights          0/8192            0/720896   ( 0.0%) 
-leafwaterdata            0/32768           0/393216   ( 0.0%) 
-waterstrips              0/32768           0/327680   ( 0.0%) 
-waterverts               0/65536           0/786432   ( 0.0%) 
-waterindices             0/65536           0/131072   ( 0.0%) 
-cubemapsamples           0/1024            0/16384    ( 0.0%) 
-overlays                 0/512             0/180224   ( 0.0%) 
-LDR lightdata         [variable]      801648/0        ( 0.0%) 
-HDR lightdata         [variable]           0/0        ( 0.0%) 
-visdata               [variable]      270340/16777216 ( 1.6%) 
-entdata               [variable]        5552/393216   ( 1.4%) 
-LDR ambient table     3350/65536       13400/262144   ( 5.1%) 
-HDR ambient table     3350/65536       13400/262144   ( 5.1%) 
-LDR leaf ambient      1066/65536       29848/1835008  ( 1.6%) 
-HDR leaf ambient      3350/65536       93800/1835008  ( 5.1%) 
-occluders                0/0               0/0        ( 0.0%) 
-occluder polygons        0/0               0/0        ( 0.0%) 
-occluder vert ind        0/0               0/0        ( 0.0%) 
-detail props          [variable]           1/12       ( 8.3%) 
-static props          [variable]           1/12       ( 8.3%) 
-pakfile               [variable]       81870/0        ( 0.0%) 
-physics               [variable]        6209/4194304  ( 0.1%) 
-physics terrain       [variable]           2/1048576  ( 0.0%) 
-
-Level flags = 0
-
-Total triangle count: 4976
-Writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-16 seconds elapsed
-
-
-
-materialPath: D:\steam\steamapps\common\Counter-Strike Source\cstrike\materials
-Loading D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.vmf
-Could not locate 'GameData' key in d:\steam\steamapps\common\counter-strike source\cstrike\gameinfo.txt
-fixing up env_cubemap materials on brush sides...
-0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
-Building Faces...done (0)
-FixTjuncs...
-PruneNodes...
-WriteBSP...
-done (0)
-writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt...Building visibility clusters...
-done (0)
-Creating default LDR cubemaps for env_cubemap using skybox materials:
-   skybox/starbox_*.vmt
- ! Run buildcubemaps in the engine to get the correct cube maps.
-Creating default HDR cubemaps for env_cubemap using skybox materials:
-   skybox/starbox_*.vmt
- ! Run buildcubemaps in the engine to get the correct cube maps.
-Finding displacement neighbors...
-Finding lightmap sample positions...
-Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
-Building Physics collision data...
-done (5) (6209 bytes)
+done (5) (6272 bytes)
 Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
 Compacting texture/material tables...
 Reduced 26 texinfos to 19
@@ -658,14 +1104,14 @@ reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\conte
 reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt
 1024 portalclusters
 1984 numportals
-0...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
 Total clusters visible: 1048576
 Average clusters visible: 1024
 Building PAS...
 Average clusters audible: 1024
 visdatasize:270340  compressed from 262144
 writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-0 seconds elapsed
+48 seconds elapsed
 
 
 
@@ -673,136 +1119,12 @@ writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\conte
 [2 texlights parsed from 'lights.rad']
 
 Loading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-2452 faces
-136693984 square feet [19683934208.00 square inches]
+2474 faces
+136718880 square feet [19687518208.00 square inches]
 0 Displacements
 0 Square Feet [0.00 Square Inches]
-2452 patches before subdivision
-27540 patches after subdivision
-2 direct lights
-0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 0, max 0
-transfer lists:   0.0 megs
-0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(0, 0, 0)
-Build Patch/Sample Hash Table(s).....Done<0.0104 sec>
-0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
-0 of 0 (0% of) surface lights went in leaf ambient cubes.
-0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
-Ready to Finish
-
-Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
-------------       ---------------  ---------------  -------- 
-models                   8/1024          384/49152    ( 0.8%) 
-brushes                 13/8192          156/98304    ( 0.2%) 
-brushsides              78/65536         624/524288   ( 0.1%) 
-planes                 204/65536        4080/1310720  ( 0.3%) 
-vertexes              2521/65536       30252/786432   ( 3.8%) 
-nodes                 3341/65536      106912/2097152  ( 5.1%) 
-texinfos                19/12288        1368/884736   ( 0.2%) 
-texdata                  3/2048           96/65536    ( 0.1%) 
-dispinfos                0/0               0/0        ( 0.0%) 
-disp_verts               0/0               0/0        ( 0.0%) 
-disp_tris                0/0               0/0        ( 0.0%) 
-disp_lmsamples           0/0               0/0        ( 0.0%) 
-faces                 2452/65536      137312/3670016  ( 3.7%) 
-hdr faces                0/65536           0/3670016  ( 0.0%) 
-origfaces               48/65536        2688/3670016  ( 0.1%) 
-leaves                3350/65536      107200/2097152  ( 5.1%) 
-leaffaces             2452/65536        4904/131072   ( 3.7%) 
-leafbrushes           2183/65536        4366/131072   ( 3.3%) 
-areas                    2/256            16/2048     ( 0.8%) 
-surfedges            10072/512000      40288/2048000  ( 2.0%) 
-edges                 5049/256000      20196/1024000  ( 2.0%) 
-LDR worldlights          2/8192          176/720896   ( 0.0%) 
-HDR worldlights          0/8192            0/720896   ( 0.0%) 
-leafwaterdata            0/32768           0/393216   ( 0.0%) 
-waterstrips              0/32768           0/327680   ( 0.0%) 
-waterverts               0/65536           0/786432   ( 0.0%) 
-waterindices             0/65536           0/131072   ( 0.0%) 
-cubemapsamples           0/1024            0/16384    ( 0.0%) 
-overlays                 0/512             0/180224   ( 0.0%) 
-LDR lightdata         [variable]      801648/0        ( 0.0%) 
-HDR lightdata         [variable]           0/0        ( 0.0%) 
-visdata               [variable]      270340/16777216 ( 1.6%) 
-entdata               [variable]        5552/393216   ( 1.4%) 
-LDR ambient table     3350/65536       13400/262144   ( 5.1%) 
-HDR ambient table     3350/65536       13400/262144   ( 5.1%) 
-LDR leaf ambient      1066/65536       29848/1835008  ( 1.6%) 
-HDR leaf ambient      3350/65536       93800/1835008  ( 5.1%) 
-occluders                0/0               0/0        ( 0.0%) 
-occluder polygons        0/0               0/0        ( 0.0%) 
-occluder vert ind        0/0               0/0        ( 0.0%) 
-detail props          [variable]           1/12       ( 8.3%) 
-static props          [variable]           1/12       ( 8.3%) 
-pakfile               [variable]       81870/0        ( 0.0%) 
-physics               [variable]        6209/4194304  ( 0.1%) 
-physics terrain       [variable]           2/1048576  ( 0.0%) 
-
-Level flags = 0
-
-Total triangle count: 4976
-Writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-17 seconds elapsed
-
-
-
-materialPath: D:\steam\steamapps\common\Counter-Strike Source\cstrike\materials
-Loading D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.vmf
-Could not locate 'GameData' key in d:\steam\steamapps\common\counter-strike source\cstrike\gameinfo.txt
-fixing up env_cubemap materials on brush sides...
-0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
-Building Faces...done (0)
-FixTjuncs...
-PruneNodes...
-WriteBSP...
-done (0)
-writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt...Building visibility clusters...
-done (0)
-Creating default LDR cubemaps for env_cubemap using skybox materials:
-   skybox/starbox_*.vmt
- ! Run buildcubemaps in the engine to get the correct cube maps.
-Creating default HDR cubemaps for env_cubemap using skybox materials:
-   skybox/starbox_*.vmt
- ! Run buildcubemaps in the engine to get the correct cube maps.
-Finding displacement neighbors...
-Finding lightmap sample positions...
-Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
-Building Physics collision data...
-done (6) (6209 bytes)
-Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
-Compacting texture/material tables...
-Reduced 26 texinfos to 19
-Reduced 3 texdatas to 3 (61 bytes to 61)
-Writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-6 seconds elapsed
-
-
-
-8 threads
-reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt
-1024 portalclusters
-1984 numportals
-0...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
-Total clusters visible: 1048576
-Average clusters visible: 1024
-Building PAS...
-Average clusters audible: 1024
-visdatasize:270340  compressed from 262144
-writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-0 seconds elapsed
-
-
-
-[Reading texlights from 'lights.rad']
-[2 texlights parsed from 'lights.rad']
-
-Loading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-2452 faces
-136693984 square feet [19683934208.00 square inches]
-0 Displacements
-0 Square Feet [0.00 Square Inches]
-2452 patches before subdivision
-27540 patches after subdivision
+2474 patches before subdivision
+29358 patches after subdivision
 2 direct lights
 0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 0, max 0
 transfer lists:   0.0 megs
@@ -818,8 +1140,8 @@ Object names       Objects/Maxobjs  Memory / Maxmem  Fullness
 models                   8/1024          384/49152    ( 0.8%) 
 brushes                 13/8192          156/98304    ( 0.2%) 
 brushsides              78/65536         624/524288   ( 0.1%) 
-planes                 204/65536        4080/1310720  ( 0.3%) 
-vertexes              2521/65536       30252/786432   ( 3.8%) 
+planes                 212/65536        4240/1310720  ( 0.3%) 
+vertexes              2543/65536       30516/786432   ( 3.9%) 
 nodes                 3341/65536      106912/2097152  ( 5.1%) 
 texinfos                19/12288        1368/884736   ( 0.2%) 
 texdata                  3/2048           96/65536    ( 0.1%) 
@@ -827,15 +1149,15 @@ dispinfos                0/0               0/0        ( 0.0%)
 disp_verts               0/0               0/0        ( 0.0%) 
 disp_tris                0/0               0/0        ( 0.0%) 
 disp_lmsamples           0/0               0/0        ( 0.0%) 
-faces                 2452/65536      137312/3670016  ( 3.7%) 
+faces                 2474/65536      138544/3670016  ( 3.8%) 
 hdr faces                0/65536           0/3670016  ( 0.0%) 
 origfaces               48/65536        2688/3670016  ( 0.1%) 
 leaves                3350/65536      107200/2097152  ( 5.1%) 
-leaffaces             2452/65536        4904/131072   ( 3.7%) 
+leaffaces             2474/65536        4948/131072   ( 3.8%) 
 leafbrushes           2183/65536        4366/131072   ( 3.3%) 
 areas                    2/256            16/2048     ( 0.8%) 
-surfedges            10072/512000      40288/2048000  ( 2.0%) 
-edges                 5049/256000      20196/1024000  ( 2.0%) 
+surfedges            10160/512000      40640/2048000  ( 2.0%) 
+edges                 5093/256000      20372/1024000  ( 2.0%) 
 LDR worldlights          2/8192          176/720896   ( 0.0%) 
 HDR worldlights          0/8192            0/720896   ( 0.0%) 
 leafwaterdata            0/32768           0/393216   ( 0.0%) 
@@ -844,10 +1166,10 @@ waterverts               0/65536           0/786432   ( 0.0%)
 waterindices             0/65536           0/131072   ( 0.0%) 
 cubemapsamples           0/1024            0/16384    ( 0.0%) 
 overlays                 0/512             0/180224   ( 0.0%) 
-LDR lightdata         [variable]      801648/0        ( 0.0%) 
+LDR lightdata         [variable]      866520/0        ( 0.0%) 
 HDR lightdata         [variable]           0/0        ( 0.0%) 
 visdata               [variable]      270340/16777216 ( 1.6%) 
-entdata               [variable]        5553/393216   ( 1.4%) 
+entdata               [variable]        3358/393216   ( 0.9%) 
 LDR ambient table     3350/65536       13400/262144   ( 5.1%) 
 HDR ambient table     3350/65536       13400/262144   ( 5.1%) 
 LDR leaf ambient      1066/65536       29848/1835008  ( 1.6%) 
@@ -858,12 +1180,12 @@ occluder vert ind        0/0               0/0        ( 0.0%)
 detail props          [variable]           1/12       ( 8.3%) 
 static props          [variable]           1/12       ( 8.3%) 
 pakfile               [variable]       81870/0        ( 0.0%) 
-physics               [variable]        6209/4194304  ( 0.1%) 
+physics               [variable]        6272/4194304  ( 0.1%) 
 physics terrain       [variable]           2/1048576  ( 0.0%) 
 
 Level flags = 0
 
-Total triangle count: 4976
+Total triangle count: 5020
 Writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
 17 seconds elapsed
 
@@ -891,13 +1213,553 @@ Finding displacement neighbors...
 Finding lightmap sample positions...
 Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
 Building Physics collision data...
-done (5) (6209 bytes)
+done (5) (6272 bytes)
 Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
 Compacting texture/material tables...
 Reduced 26 texinfos to 19
 Reduced 3 texdatas to 3 (61 bytes to 61)
 Writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
 5 seconds elapsed
+
+
+
+8 threads
+reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt
+1024 portalclusters
+1984 numportals
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 1048576
+Average clusters visible: 1024
+Building PAS...
+Average clusters audible: 1024
+visdatasize:270340  compressed from 262144
+writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+48 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[2 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+2474 faces
+136718880 square feet [19687518208.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+2474 patches before subdivision
+29358 patches after subdivision
+2 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 0, max 0
+transfer lists:   0.0 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(0, 0, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0128 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                   8/1024          384/49152    ( 0.8%) 
+brushes                 13/8192          156/98304    ( 0.2%) 
+brushsides              78/65536         624/524288   ( 0.1%) 
+planes                 212/65536        4240/1310720  ( 0.3%) 
+vertexes              2543/65536       30516/786432   ( 3.9%) 
+nodes                 3341/65536      106912/2097152  ( 5.1%) 
+texinfos                19/12288        1368/884736   ( 0.2%) 
+texdata                  3/2048           96/65536    ( 0.1%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                 2474/65536      138544/3670016  ( 3.8%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               48/65536        2688/3670016  ( 0.1%) 
+leaves                3350/65536      107200/2097152  ( 5.1%) 
+leaffaces             2474/65536        4948/131072   ( 3.8%) 
+leafbrushes           2183/65536        4366/131072   ( 3.3%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges            10160/512000      40640/2048000  ( 2.0%) 
+edges                 5093/256000      20372/1024000  ( 2.0%) 
+LDR worldlights          2/8192          176/720896   ( 0.0%) 
+HDR worldlights          0/8192            0/720896   ( 0.0%) 
+leafwaterdata            0/32768           0/393216   ( 0.0%) 
+waterstrips              0/32768           0/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices             0/65536           0/131072   ( 0.0%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]      866520/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]      270340/16777216 ( 1.6%) 
+entdata               [variable]        3359/393216   ( 0.9%) 
+LDR ambient table     3350/65536       13400/262144   ( 5.1%) 
+HDR ambient table     3350/65536       13400/262144   ( 5.1%) 
+LDR leaf ambient      1066/65536       29848/1835008  ( 1.6%) 
+HDR leaf ambient      3350/65536       93800/1835008  ( 5.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/12       ( 8.3%) 
+pakfile               [variable]       81870/0        ( 0.0%) 
+physics               [variable]        6272/4194304  ( 0.1%) 
+physics terrain       [variable]           2/1048576  ( 0.0%) 
+
+Level flags = 0
+
+Total triangle count: 5020
+Writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+17 seconds elapsed
+
+
+
+materialPath: D:\steam\steamapps\common\Counter-Strike Source\cstrike\materials
+Loading D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.vmf
+Could not locate 'GameData' key in d:\steam\steamapps\common\counter-strike source\cstrike\gameinfo.txt
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt...Building visibility clusters...
+done (0)
+Creating default LDR cubemaps for env_cubemap using skybox materials:
+   skybox/starbox_*.vmt
+ ! Run buildcubemaps in the engine to get the correct cube maps.
+Creating default HDR cubemaps for env_cubemap using skybox materials:
+   skybox/starbox_*.vmt
+ ! Run buildcubemaps in the engine to get the correct cube maps.
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (6) (6273 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 26 texinfos to 19
+Reduced 3 texdatas to 3 (61 bytes to 61)
+Writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+6 seconds elapsed
+
+
+
+8 threads
+reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt
+1024 portalclusters
+1984 numportals
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 1048576
+Average clusters visible: 1024
+Building PAS...
+Average clusters audible: 1024
+visdatasize:270340  compressed from 262144
+writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+47 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[2 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+2464 faces
+136730160 square feet [19689142272.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+2464 patches before subdivision
+30640 patches after subdivision
+2 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 0, max 0
+transfer lists:   0.0 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(0, 0, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0116 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                   8/1024          384/49152    ( 0.8%) 
+brushes                 13/8192          156/98304    ( 0.2%) 
+brushsides              81/65536         648/524288   ( 0.1%) 
+planes                 224/65536        4480/1310720  ( 0.3%) 
+vertexes              2552/65536       30624/786432   ( 3.9%) 
+nodes                 3341/65536      106912/2097152  ( 5.1%) 
+texinfos                19/12288        1368/884736   ( 0.2%) 
+texdata                  3/2048           96/65536    ( 0.1%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                 2464/65536      137984/3670016  ( 3.8%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               48/65536        2688/3670016  ( 0.1%) 
+leaves                3350/65536      107200/2097152  ( 5.1%) 
+leaffaces             2464/65536        4928/131072   ( 3.8%) 
+leafbrushes           2183/65536        4366/131072   ( 3.3%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges            10158/512000      40632/2048000  ( 2.0%) 
+edges                 5092/256000      20368/1024000  ( 2.0%) 
+LDR worldlights          2/8192          176/720896   ( 0.0%) 
+HDR worldlights          0/8192            0/720896   ( 0.0%) 
+leafwaterdata            0/32768           0/393216   ( 0.0%) 
+waterstrips              0/32768           0/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices             0/65536           0/131072   ( 0.0%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]      869112/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]      270340/16777216 ( 1.6%) 
+entdata               [variable]        3359/393216   ( 0.9%) 
+LDR ambient table     3350/65536       13400/262144   ( 5.1%) 
+HDR ambient table     3350/65536       13400/262144   ( 5.1%) 
+LDR leaf ambient      1066/65536       29848/1835008  ( 1.6%) 
+HDR leaf ambient      3350/65536       93800/1835008  ( 5.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/12       ( 8.3%) 
+pakfile               [variable]       81870/0        ( 0.0%) 
+physics               [variable]        6273/4194304  ( 0.1%) 
+physics terrain       [variable]           2/1048576  ( 0.0%) 
+
+Level flags = 0
+
+Total triangle count: 5038
+Writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+17 seconds elapsed
+
+
+
+materialPath: D:\steam\steamapps\common\Counter-Strike Source\cstrike\materials
+Loading D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.vmf
+Could not locate 'GameData' key in d:\steam\steamapps\common\counter-strike source\cstrike\gameinfo.txt
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt...Building visibility clusters...
+done (0)
+Creating default LDR cubemaps for env_cubemap using skybox materials:
+   skybox/starbox_*.vmt
+ ! Run buildcubemaps in the engine to get the correct cube maps.
+Creating default HDR cubemaps for env_cubemap using skybox materials:
+   skybox/starbox_*.vmt
+ ! Run buildcubemaps in the engine to get the correct cube maps.
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (6) (6121 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 23 texinfos to 17
+Reduced 3 texdatas to 3 (61 bytes to 61)
+Writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+6 seconds elapsed
+
+
+
+8 threads
+reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt
+ 896 portalclusters
+1700 numportals
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 401408
+Average clusters visible: 448
+Building PAS...
+Average clusters audible: 448
+visdatasize:111108  compressed from 200704
+writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+4 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[2 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+13732 faces
+4 degenerate faces
+146379408 square feet [21078634496.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+13728 patches before subdivision
+
+
+
+materialPath: D:\steam\steamapps\common\Counter-Strike Source\cstrike\materials
+Loading D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.vmf
+Could not locate 'GameData' key in d:\steam\steamapps\common\counter-strike source\cstrike\gameinfo.txt
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt...Building visibility clusters...
+done (0)
+Creating default LDR cubemaps for env_cubemap using skybox materials:
+   skybox/starbox_*.vmt
+ ! Run buildcubemaps in the engine to get the correct cube maps.
+Creating default HDR cubemaps for env_cubemap using skybox materials:
+   skybox/starbox_*.vmt
+ ! Run buildcubemaps in the engine to get the correct cube maps.
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (6) (6121 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 23 texinfos to 17
+Reduced 3 texdatas to 3 (61 bytes to 61)
+Writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+6 seconds elapsed
+
+
+
+8 threads
+reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt
+ 896 portalclusters
+1700 numportals
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 401408
+Average clusters visible: 448
+Building PAS...
+Average clusters audible: 448
+visdatasize:111108  compressed from 200704
+writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+4 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[2 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+13732 faces
+4 degenerate faces
+146379408 square feet [21078634496.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+13728 patches before subdivision
+
+
+
+materialPath: D:\steam\steamapps\common\Counter-Strike Source\cstrike\materials
+Loading D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.vmf
+Could not locate 'GameData' key in d:\steam\steamapps\common\counter-strike source\cstrike\gameinfo.txt
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt...Building visibility clusters...
+done (0)
+Creating default LDR cubemaps for env_cubemap using skybox materials:
+   skybox/starbox_*.vmt
+ ! Run buildcubemaps in the engine to get the correct cube maps.
+Creating default HDR cubemaps for env_cubemap using skybox materials:
+   skybox/starbox_*.vmt
+ ! Run buildcubemaps in the engine to get the correct cube maps.
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (6) (6121 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 23 texinfos to 17
+Reduced 3 texdatas to 3 (61 bytes to 61)
+Writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+6 seconds elapsed
+
+
+
+8 threads
+reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt
+2048 portalclusters
+3968 numportals
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 2097152
+Average clusters visible: 1024
+Building PAS...
+Average clusters audible: 1024
+visdatasize:1064964  compressed from 1048576
+writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+1 minute, 56 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[2 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+19268 faces
+150215472 square feet [21631027200.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+19268 patches before subdivision
+
+
+
+materialPath: D:\steam\steamapps\common\Counter-Strike Source\cstrike\materials
+Loading D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.vmf
+Could not locate 'GameData' key in d:\steam\steamapps\common\counter-strike source\cstrike\gameinfo.txt
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt...Building visibility clusters...
+done (0)
+Creating default LDR cubemaps for env_cubemap using skybox materials:
+   skybox/starbox_*.vmt
+ ! Run buildcubemaps in the engine to get the correct cube maps.
+Creating default HDR cubemaps for env_cubemap using skybox materials:
+   skybox/starbox_*.vmt
+ ! Run buildcubemaps in the engine to get the correct cube maps.
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (6) (6121 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 23 texinfos to 17
+Reduced 3 texdatas to 3 (61 bytes to 61)
+Writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+6 seconds elapsed
+
+
+
+8 threads
+reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt
+2048 portalclusters
+3968 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 2097152
+Average clusters visible: 1024
+Building PAS...
+Average clusters audible: 1024
+visdatasize:1064964  compressed from 1048576
+writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[2 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+19268 faces
+150215472 square feet [21631027200.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+19268 patches before subdivision
+
+
+
+materialPath: D:\steam\steamapps\common\Counter-Strike Source\cstrike\materials
+Loading D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.vmf
+Error: displacement found on a(n) func_brush entity - not supported (entity 13, brush 0)
+
+
+
+8 threads
+reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt
+LoadPortals: couldn't read d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt
+
+
+
+[Reading texlights from 'lights.rad']
+[2 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+19268 faces
+150215472 square feet [21631027200.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+19268 patches before subdivision
+
+
+
+materialPath: D:\steam\steamapps\common\Counter-Strike Source\cstrike\materials
+Loading D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.vmf
+Error: displacement found on a(n) func_brush entity - not supported (entity 14, brush 0)
+
+
+
+8 threads
+reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt
+LoadPortals: couldn't read d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt
+
+
+
+[Reading texlights from 'lights.rad']
+[2 texlights parsed from 'lights.rad']
+
+Loading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+19268 faces
+150215472 square feet [21631027200.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+19268 patches before subdivision
+
+
+
+materialPath: D:\steam\steamapps\common\Counter-Strike Source\cstrike\materials
+Loading D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.vmf
+Could not locate 'GameData' key in d:\steam\steamapps\common\counter-strike source\cstrike\gameinfo.txt
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt...Building visibility clusters...
+done (0)
+Creating default LDR cubemaps for env_cubemap using skybox materials:
+   skybox/starbox_*.vmt
+ ! Run buildcubemaps in the engine to get the correct cube maps.
+Creating default HDR cubemaps for env_cubemap using skybox materials:
+   skybox/starbox_*.vmt
+ ! Run buildcubemaps in the engine to get the correct cube maps.
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (7) (6275 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 25 texinfos to 19
+Reduced 3 texdatas to 3 (61 bytes to 61)
+Writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
+7 seconds elapsed
 
 
 
@@ -921,75 +1783,11 @@ writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\conte
 [2 texlights parsed from 'lights.rad']
 
 Loading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-2452 faces
-136693984 square feet [19683934208.00 square inches]
+10660 faces
+150509792 square feet [21673410560.00 square inches]
 0 Displacements
 0 Square Feet [0.00 Square Inches]
-2452 patches before subdivision
-27540 patches after subdivision
-2 direct lights
-0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 0, max 0
-transfer lists:   0.0 megs
-0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(0, 0, 0)
-Build Patch/Sample Hash Table(s).....Done<0.0113 sec>
-0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
-0 of 0 (0% of) surface lights went in leaf ambient cubes.
-0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
-Ready to Finish
-
-Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
-------------       ---------------  ---------------  -------- 
-models                   8/1024          384/49152    ( 0.8%) 
-brushes                 13/8192          156/98304    ( 0.2%) 
-brushsides              78/65536         624/524288   ( 0.1%) 
-planes                 204/65536        4080/1310720  ( 0.3%) 
-vertexes              2521/65536       30252/786432   ( 3.8%) 
-nodes                 3341/65536      106912/2097152  ( 5.1%) 
-texinfos                19/12288        1368/884736   ( 0.2%) 
-texdata                  3/2048           96/65536    ( 0.1%) 
-dispinfos                0/0               0/0        ( 0.0%) 
-disp_verts               0/0               0/0        ( 0.0%) 
-disp_tris                0/0               0/0        ( 0.0%) 
-disp_lmsamples           0/0               0/0        ( 0.0%) 
-faces                 2452/65536      137312/3670016  ( 3.7%) 
-hdr faces                0/65536           0/3670016  ( 0.0%) 
-origfaces               48/65536        2688/3670016  ( 0.1%) 
-leaves                3350/65536      107200/2097152  ( 5.1%) 
-leaffaces             2452/65536        4904/131072   ( 3.7%) 
-leafbrushes           2183/65536        4366/131072   ( 3.3%) 
-areas                    2/256            16/2048     ( 0.8%) 
-surfedges            10072/512000      40288/2048000  ( 2.0%) 
-edges                 5049/256000      20196/1024000  ( 2.0%) 
-LDR worldlights          2/8192          176/720896   ( 0.0%) 
-HDR worldlights          0/8192            0/720896   ( 0.0%) 
-leafwaterdata            0/32768           0/393216   ( 0.0%) 
-waterstrips              0/32768           0/327680   ( 0.0%) 
-waterverts               0/65536           0/786432   ( 0.0%) 
-waterindices             0/65536           0/131072   ( 0.0%) 
-cubemapsamples           0/1024            0/16384    ( 0.0%) 
-overlays                 0/512             0/180224   ( 0.0%) 
-LDR lightdata         [variable]      801648/0        ( 0.0%) 
-HDR lightdata         [variable]           0/0        ( 0.0%) 
-visdata               [variable]      270340/16777216 ( 1.6%) 
-entdata               [variable]        5551/393216   ( 1.4%) 
-LDR ambient table     3350/65536       13400/262144   ( 5.1%) 
-HDR ambient table     3350/65536       13400/262144   ( 5.1%) 
-LDR leaf ambient      1066/65536       29848/1835008  ( 1.6%) 
-HDR leaf ambient      3350/65536       93800/1835008  ( 5.1%) 
-occluders                0/0               0/0        ( 0.0%) 
-occluder polygons        0/0               0/0        ( 0.0%) 
-occluder vert ind        0/0               0/0        ( 0.0%) 
-detail props          [variable]           1/12       ( 8.3%) 
-static props          [variable]           1/12       ( 8.3%) 
-pakfile               [variable]       81870/0        ( 0.0%) 
-physics               [variable]        6209/4194304  ( 0.1%) 
-physics terrain       [variable]           2/1048576  ( 0.0%) 
-
-Level flags = 0
-
-Total triangle count: 4976
-Writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-17 seconds elapsed
+10660 patches before subdivision
 
 
 
@@ -1015,10 +1813,10 @@ Finding displacement neighbors...
 Finding lightmap sample positions...
 Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
 Building Physics collision data...
-done (6) (6209 bytes)
+done (6) (6275 bytes)
 Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
 Compacting texture/material tables...
-Reduced 26 texinfos to 19
+Reduced 25 texinfos to 19
 Reduced 3 texdatas to 3 (61 bytes to 61)
 Writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
 6 seconds elapsed
@@ -1045,75 +1843,11 @@ writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\conte
 [2 texlights parsed from 'lights.rad']
 
 Loading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-2452 faces
-136693984 square feet [19683934208.00 square inches]
+10660 faces
+150509792 square feet [21673410560.00 square inches]
 0 Displacements
 0 Square Feet [0.00 Square Inches]
-2452 patches before subdivision
-27540 patches after subdivision
-2 direct lights
-0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 0, max 0
-transfer lists:   0.0 megs
-0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(0, 0, 0)
-Build Patch/Sample Hash Table(s).....Done<0.0186 sec>
-0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
-0 of 0 (0% of) surface lights went in leaf ambient cubes.
-0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
-Ready to Finish
-
-Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
-------------       ---------------  ---------------  -------- 
-models                   8/1024          384/49152    ( 0.8%) 
-brushes                 13/8192          156/98304    ( 0.2%) 
-brushsides              78/65536         624/524288   ( 0.1%) 
-planes                 204/65536        4080/1310720  ( 0.3%) 
-vertexes              2521/65536       30252/786432   ( 3.8%) 
-nodes                 3341/65536      106912/2097152  ( 5.1%) 
-texinfos                19/12288        1368/884736   ( 0.2%) 
-texdata                  3/2048           96/65536    ( 0.1%) 
-dispinfos                0/0               0/0        ( 0.0%) 
-disp_verts               0/0               0/0        ( 0.0%) 
-disp_tris                0/0               0/0        ( 0.0%) 
-disp_lmsamples           0/0               0/0        ( 0.0%) 
-faces                 2452/65536      137312/3670016  ( 3.7%) 
-hdr faces                0/65536           0/3670016  ( 0.0%) 
-origfaces               48/65536        2688/3670016  ( 0.1%) 
-leaves                3350/65536      107200/2097152  ( 5.1%) 
-leaffaces             2452/65536        4904/131072   ( 3.7%) 
-leafbrushes           2183/65536        4366/131072   ( 3.3%) 
-areas                    2/256            16/2048     ( 0.8%) 
-surfedges            10072/512000      40288/2048000  ( 2.0%) 
-edges                 5049/256000      20196/1024000  ( 2.0%) 
-LDR worldlights          2/8192          176/720896   ( 0.0%) 
-HDR worldlights          0/8192            0/720896   ( 0.0%) 
-leafwaterdata            0/32768           0/393216   ( 0.0%) 
-waterstrips              0/32768           0/327680   ( 0.0%) 
-waterverts               0/65536           0/786432   ( 0.0%) 
-waterindices             0/65536           0/131072   ( 0.0%) 
-cubemapsamples           0/1024            0/16384    ( 0.0%) 
-overlays                 0/512             0/180224   ( 0.0%) 
-LDR lightdata         [variable]      801648/0        ( 0.0%) 
-HDR lightdata         [variable]           0/0        ( 0.0%) 
-visdata               [variable]      270340/16777216 ( 1.6%) 
-entdata               [variable]        5553/393216   ( 1.4%) 
-LDR ambient table     3350/65536       13400/262144   ( 5.1%) 
-HDR ambient table     3350/65536       13400/262144   ( 5.1%) 
-LDR leaf ambient      1066/65536       29848/1835008  ( 1.6%) 
-HDR leaf ambient      3350/65536       93800/1835008  ( 5.1%) 
-occluders                0/0               0/0        ( 0.0%) 
-occluder polygons        0/0               0/0        ( 0.0%) 
-occluder vert ind        0/0               0/0        ( 0.0%) 
-detail props          [variable]           1/12       ( 8.3%) 
-static props          [variable]           1/12       ( 8.3%) 
-pakfile               [variable]       81870/0        ( 0.0%) 
-physics               [variable]        6209/4194304  ( 0.1%) 
-physics terrain       [variable]           2/1048576  ( 0.0%) 
-
-Level flags = 0
-
-Total triangle count: 4976
-Writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-17 seconds elapsed
+10660 patches before subdivision
 
 
 
@@ -1139,13 +1873,13 @@ Finding displacement neighbors...
 Finding lightmap sample positions...
 Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
 Building Physics collision data...
-done (5) (6209 bytes)
+done (7) (8979 bytes)
 Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
 Compacting texture/material tables...
-Reduced 26 texinfos to 19
-Reduced 3 texdatas to 3 (61 bytes to 61)
+Reduced 26 texinfos to 18
+Reduced 4 texdatas to 4 (79 bytes to 79)
 Writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-5 seconds elapsed
+7 seconds elapsed
 
 
 
@@ -1169,17 +1903,17 @@ writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\conte
 [2 texlights parsed from 'lights.rad']
 
 Loading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-2452 faces
-136693984 square feet [19683934208.00 square inches]
+5348 faces
+141675072 square feet [20401209344.00 square inches]
 0 Displacements
 0 Square Feet [0.00 Square Inches]
-2452 patches before subdivision
-27540 patches after subdivision
+5348 patches before subdivision
+400484 patches after subdivision
 2 direct lights
 0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 0, max 0
 transfer lists:   0.0 megs
 0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(0, 0, 0)
-Build Patch/Sample Hash Table(s).....Done<0.0105 sec>
+Build Patch/Sample Hash Table(s).....Done<0.3982 sec>
 0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
 0 of 0 (0% of) surface lights went in leaf ambient cubes.
 0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
@@ -1188,26 +1922,26 @@ Ready to Finish
 Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
 ------------       ---------------  ---------------  -------- 
 models                   8/1024          384/49152    ( 0.8%) 
-brushes                 13/8192          156/98304    ( 0.2%) 
-brushsides              78/65536         624/524288   ( 0.1%) 
-planes                 204/65536        4080/1310720  ( 0.3%) 
-vertexes              2521/65536       30252/786432   ( 3.8%) 
-nodes                 3341/65536      106912/2097152  ( 5.1%) 
-texinfos                19/12288        1368/884736   ( 0.2%) 
-texdata                  3/2048           96/65536    ( 0.1%) 
+brushes                 21/8192          252/98304    ( 0.3%) 
+brushsides             126/65536        1008/524288   ( 0.2%) 
+planes                 196/65536        3920/1310720  ( 0.3%) 
+vertexes              5510/65536       66120/786432   ( 8.4%) 
+nodes                 3353/65536      107296/2097152  ( 5.1%) 
+texinfos                18/12288        1296/884736   ( 0.1%) 
+texdata                  4/2048          128/65536    ( 0.2%) 
 dispinfos                0/0               0/0        ( 0.0%) 
 disp_verts               0/0               0/0        ( 0.0%) 
 disp_tris                0/0               0/0        ( 0.0%) 
 disp_lmsamples           0/0               0/0        ( 0.0%) 
-faces                 2452/65536      137312/3670016  ( 3.7%) 
+faces                 5348/65536      299488/3670016  ( 8.2%) 
 hdr faces                0/65536           0/3670016  ( 0.0%) 
-origfaces               48/65536        2688/3670016  ( 0.1%) 
-leaves                3350/65536      107200/2097152  ( 5.1%) 
-leaffaces             2452/65536        4904/131072   ( 3.7%) 
-leafbrushes           2183/65536        4366/131072   ( 3.3%) 
+origfaces               43/65536        2408/3670016  ( 0.1%) 
+leaves                3362/65536      107584/2097152  ( 5.1%) 
+leaffaces             5348/65536       10696/131072   ( 8.2%) 
+leafbrushes           2191/65536        4382/131072   ( 3.3%) 
 areas                    2/256            16/2048     ( 0.8%) 
-surfedges            10072/512000      40288/2048000  ( 2.0%) 
-edges                 5049/256000      20196/1024000  ( 2.0%) 
+surfedges            21564/512000      86256/2048000  ( 4.2%) 
+edges                10909/256000      43636/1024000  ( 4.3%) 
 LDR worldlights          2/8192          176/720896   ( 0.0%) 
 HDR worldlights          0/8192            0/720896   ( 0.0%) 
 leafwaterdata            0/32768           0/393216   ( 0.0%) 
@@ -1216,273 +1950,25 @@ waterverts               0/65536           0/786432   ( 0.0%)
 waterindices             0/65536           0/131072   ( 0.0%) 
 cubemapsamples           0/1024            0/16384    ( 0.0%) 
 overlays                 0/512             0/180224   ( 0.0%) 
-LDR lightdata         [variable]      801648/0        ( 0.0%) 
+LDR lightdata         [variable]    13488776/0        ( 0.0%) 
 HDR lightdata         [variable]           0/0        ( 0.0%) 
 visdata               [variable]      270340/16777216 ( 1.6%) 
-entdata               [variable]        5553/393216   ( 1.4%) 
-LDR ambient table     3350/65536       13400/262144   ( 5.1%) 
-HDR ambient table     3350/65536       13400/262144   ( 5.1%) 
-LDR leaf ambient      1066/65536       29848/1835008  ( 1.6%) 
-HDR leaf ambient      3350/65536       93800/1835008  ( 5.1%) 
+entdata               [variable]        3499/393216   ( 0.9%) 
+LDR ambient table     3362/65536       13448/262144   ( 5.1%) 
+HDR ambient table     3362/65536       13448/262144   ( 5.1%) 
+LDR leaf ambient      1072/65536       30016/1835008  ( 1.6%) 
+HDR leaf ambient      3362/65536       94136/1835008  ( 5.1%) 
 occluders                0/0               0/0        ( 0.0%) 
 occluder polygons        0/0               0/0        ( 0.0%) 
 occluder vert ind        0/0               0/0        ( 0.0%) 
 detail props          [variable]           1/12       ( 8.3%) 
 static props          [variable]           1/12       ( 8.3%) 
 pakfile               [variable]       81870/0        ( 0.0%) 
-physics               [variable]        6209/4194304  ( 0.1%) 
+physics               [variable]        8979/4194304  ( 0.2%) 
 physics terrain       [variable]           2/1048576  ( 0.0%) 
 
 Level flags = 0
 
-Total triangle count: 4976
+Total triangle count: 10696
 Writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-17 seconds elapsed
-
-
-
-materialPath: D:\steam\steamapps\common\Counter-Strike Source\cstrike\materials
-Loading D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.vmf
-Could not locate 'GameData' key in d:\steam\steamapps\common\counter-strike source\cstrike\gameinfo.txt
-fixing up env_cubemap materials on brush sides...
-0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
-Building Faces...done (0)
-FixTjuncs...
-PruneNodes...
-WriteBSP...
-done (0)
-writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt...Building visibility clusters...
-done (0)
-Creating default LDR cubemaps for env_cubemap using skybox materials:
-   skybox/starbox_*.vmt
- ! Run buildcubemaps in the engine to get the correct cube maps.
-Creating default HDR cubemaps for env_cubemap using skybox materials:
-   skybox/starbox_*.vmt
- ! Run buildcubemaps in the engine to get the correct cube maps.
-Finding displacement neighbors...
-Finding lightmap sample positions...
-Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
-Building Physics collision data...
-done (5) (6273 bytes)
-Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
-Compacting texture/material tables...
-Reduced 26 texinfos to 19
-Reduced 3 texdatas to 3 (61 bytes to 61)
-Writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-5 seconds elapsed
-
-
-
-8 threads
-reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt
-1024 portalclusters
-1984 numportals
-0...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
-Total clusters visible: 1048576
-Average clusters visible: 1024
-Building PAS...
-Average clusters audible: 1024
-visdatasize:270340  compressed from 262144
-writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-0 seconds elapsed
-
-
-
-[Reading texlights from 'lights.rad']
-[2 texlights parsed from 'lights.rad']
-
-Loading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-2452 faces
-136693984 square feet [19683934208.00 square inches]
-0 Displacements
-0 Square Feet [0.00 Square Inches]
-2452 patches before subdivision
-27540 patches after subdivision
-2 direct lights
-0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 0, max 0
-transfer lists:   0.0 megs
-0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(0, 0, 0)
-Build Patch/Sample Hash Table(s).....Done<0.0106 sec>
-0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
-0 of 0 (0% of) surface lights went in leaf ambient cubes.
-0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
-Ready to Finish
-
-Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
-------------       ---------------  ---------------  -------- 
-models                   8/1024          384/49152    ( 0.8%) 
-brushes                 13/8192          156/98304    ( 0.2%) 
-brushsides              78/65536         624/524288   ( 0.1%) 
-planes                 212/65536        4240/1310720  ( 0.3%) 
-vertexes              2521/65536       30252/786432   ( 3.8%) 
-nodes                 3341/65536      106912/2097152  ( 5.1%) 
-texinfos                19/12288        1368/884736   ( 0.2%) 
-texdata                  3/2048           96/65536    ( 0.1%) 
-dispinfos                0/0               0/0        ( 0.0%) 
-disp_verts               0/0               0/0        ( 0.0%) 
-disp_tris                0/0               0/0        ( 0.0%) 
-disp_lmsamples           0/0               0/0        ( 0.0%) 
-faces                 2452/65536      137312/3670016  ( 3.7%) 
-hdr faces                0/65536           0/3670016  ( 0.0%) 
-origfaces               48/65536        2688/3670016  ( 0.1%) 
-leaves                3350/65536      107200/2097152  ( 5.1%) 
-leaffaces             2452/65536        4904/131072   ( 3.7%) 
-leafbrushes           2183/65536        4366/131072   ( 3.3%) 
-areas                    2/256            16/2048     ( 0.8%) 
-surfedges            10072/512000      40288/2048000  ( 2.0%) 
-edges                 5049/256000      20196/1024000  ( 2.0%) 
-LDR worldlights          2/8192          176/720896   ( 0.0%) 
-HDR worldlights          0/8192            0/720896   ( 0.0%) 
-leafwaterdata            0/32768           0/393216   ( 0.0%) 
-waterstrips              0/32768           0/327680   ( 0.0%) 
-waterverts               0/65536           0/786432   ( 0.0%) 
-waterindices             0/65536           0/131072   ( 0.0%) 
-cubemapsamples           0/1024            0/16384    ( 0.0%) 
-overlays                 0/512             0/180224   ( 0.0%) 
-LDR lightdata         [variable]      801648/0        ( 0.0%) 
-HDR lightdata         [variable]           0/0        ( 0.0%) 
-visdata               [variable]      270340/16777216 ( 1.6%) 
-entdata               [variable]        5558/393216   ( 1.4%) 
-LDR ambient table     3350/65536       13400/262144   ( 5.1%) 
-HDR ambient table     3350/65536       13400/262144   ( 5.1%) 
-LDR leaf ambient      1066/65536       29848/1835008  ( 1.6%) 
-HDR leaf ambient      3350/65536       93800/1835008  ( 5.1%) 
-occluders                0/0               0/0        ( 0.0%) 
-occluder polygons        0/0               0/0        ( 0.0%) 
-occluder vert ind        0/0               0/0        ( 0.0%) 
-detail props          [variable]           1/12       ( 8.3%) 
-static props          [variable]           1/12       ( 8.3%) 
-pakfile               [variable]       81870/0        ( 0.0%) 
-physics               [variable]        6273/4194304  ( 0.1%) 
-physics terrain       [variable]           2/1048576  ( 0.0%) 
-
-Level flags = 0
-
-Total triangle count: 4976
-Writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-17 seconds elapsed
-
-
-
-materialPath: D:\steam\steamapps\common\Counter-Strike Source\cstrike\materials
-Loading D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.vmf
-Could not locate 'GameData' key in d:\steam\steamapps\common\counter-strike source\cstrike\gameinfo.txt
-fixing up env_cubemap materials on brush sides...
-0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
-Building Faces...done (0)
-FixTjuncs...
-PruneNodes...
-WriteBSP...
-done (0)
-writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt...Building visibility clusters...
-done (0)
-Creating default LDR cubemaps for env_cubemap using skybox materials:
-   skybox/starbox_*.vmt
- ! Run buildcubemaps in the engine to get the correct cube maps.
-Creating default HDR cubemaps for env_cubemap using skybox materials:
-   skybox/starbox_*.vmt
- ! Run buildcubemaps in the engine to get the correct cube maps.
-Finding displacement neighbors...
-Finding lightmap sample positions...
-Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
-Building Physics collision data...
-done (5) (6273 bytes)
-Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
-Compacting texture/material tables...
-Reduced 26 texinfos to 19
-Reduced 3 texdatas to 3 (61 bytes to 61)
-Writing D:\steam\steamapps\common\GarrysMod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-5 seconds elapsed
-
-
-
-8 threads
-reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-reading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.prt
-1024 portalclusters
-1984 numportals
-0...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
-Total clusters visible: 1048576
-Average clusters visible: 1024
-Building PAS...
-Average clusters audible: 1024
-visdatasize:270340  compressed from 262144
-writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-0 seconds elapsed
-
-
-
-[Reading texlights from 'lights.rad']
-[2 texlights parsed from 'lights.rad']
-
-Loading d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-2452 faces
-136693984 square feet [19683934208.00 square inches]
-0 Displacements
-0 Square Feet [0.00 Square Inches]
-2452 patches before subdivision
-27540 patches after subdivision
-2 direct lights
-0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 0, max 0
-transfer lists:   0.0 megs
-0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(0, 0, 0)
-Build Patch/Sample Hash Table(s).....Done<0.0116 sec>
-0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
-0 of 0 (0% of) surface lights went in leaf ambient cubes.
-0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
-Ready to Finish
-
-Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
-------------       ---------------  ---------------  -------- 
-models                   8/1024          384/49152    ( 0.8%) 
-brushes                 13/8192          156/98304    ( 0.2%) 
-brushsides              78/65536         624/524288   ( 0.1%) 
-planes                 212/65536        4240/1310720  ( 0.3%) 
-vertexes              2521/65536       30252/786432   ( 3.8%) 
-nodes                 3341/65536      106912/2097152  ( 5.1%) 
-texinfos                19/12288        1368/884736   ( 0.2%) 
-texdata                  3/2048           96/65536    ( 0.1%) 
-dispinfos                0/0               0/0        ( 0.0%) 
-disp_verts               0/0               0/0        ( 0.0%) 
-disp_tris                0/0               0/0        ( 0.0%) 
-disp_lmsamples           0/0               0/0        ( 0.0%) 
-faces                 2452/65536      137312/3670016  ( 3.7%) 
-hdr faces                0/65536           0/3670016  ( 0.0%) 
-origfaces               48/65536        2688/3670016  ( 0.1%) 
-leaves                3350/65536      107200/2097152  ( 5.1%) 
-leaffaces             2452/65536        4904/131072   ( 3.7%) 
-leafbrushes           2183/65536        4366/131072   ( 3.3%) 
-areas                    2/256            16/2048     ( 0.8%) 
-surfedges            10072/512000      40288/2048000  ( 2.0%) 
-edges                 5049/256000      20196/1024000  ( 2.0%) 
-LDR worldlights          2/8192          176/720896   ( 0.0%) 
-HDR worldlights          0/8192            0/720896   ( 0.0%) 
-leafwaterdata            0/32768           0/393216   ( 0.0%) 
-waterstrips              0/32768           0/327680   ( 0.0%) 
-waterverts               0/65536           0/786432   ( 0.0%) 
-waterindices             0/65536           0/131072   ( 0.0%) 
-cubemapsamples           0/1024            0/16384    ( 0.0%) 
-overlays                 0/512             0/180224   ( 0.0%) 
-LDR lightdata         [variable]      801648/0        ( 0.0%) 
-HDR lightdata         [variable]           0/0        ( 0.0%) 
-visdata               [variable]      270340/16777216 ( 1.6%) 
-entdata               [variable]        5550/393216   ( 1.4%) 
-LDR ambient table     3350/65536       13400/262144   ( 5.1%) 
-HDR ambient table     3350/65536       13400/262144   ( 5.1%) 
-LDR leaf ambient      1066/65536       29848/1835008  ( 1.6%) 
-HDR leaf ambient      3350/65536       93800/1835008  ( 5.1%) 
-occluders                0/0               0/0        ( 0.0%) 
-occluder polygons        0/0               0/0        ( 0.0%) 
-occluder vert ind        0/0               0/0        ( 0.0%) 
-detail props          [variable]           1/12       ( 8.3%) 
-static props          [variable]           1/12       ( 8.3%) 
-pakfile               [variable]       81870/0        ( 0.0%) 
-physics               [variable]        6273/4194304  ( 0.1%) 
-physics terrain       [variable]           2/1048576  ( 0.0%) 
-
-Level flags = 0
-
-Total triangle count: 4976
-Writing d:\steam\steamapps\common\garrysmod\garrysmod\gamemodes\spacebuild\content\maps\sbi_base.bsp
-17 seconds elapsed
+37 seconds elapsed

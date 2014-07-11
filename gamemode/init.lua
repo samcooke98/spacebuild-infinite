@@ -1,8 +1,13 @@
 
+--Net Message Precaching
+ util.AddNetworkString( "SendPlanets" )
+
+AddCSLuaFile( "/classes/Planet.lua")
+
+
 --Include files here
 include("shared.lua")
-
-
+include("/classes/Planet.lua")
 
 
 --Add Clientside files here
@@ -10,11 +15,10 @@ AddCSLuaFile( "cl_init.lua" )
 AddCSLuaFile( "shared.lua" )
 
 
-
 --Gravity Hull 
 GravHull = {}
 local GH = GravHull
-print("Initialising Gravity Hull")
+--print("Initialising Gravity Hull")
 include( "/gravityhull/sv_main.lua" )
 include( "/gravityhull/sv_overrides.lua" )
 
@@ -36,3 +40,6 @@ include("/maprepeat/sh_main.lua")
 
 AddCSLuaFile( "/maprepeat/sh_main.lua" )
 AddCSLuaFile( "/maprepeat/cl_main.lua" )
+
+
+

@@ -1,6 +1,8 @@
 AddCSLuaFile()
 DEFINE_BASECLASS("base_anim")
 
+local GM = GAMEMODE
+
 function ENT:SetupDataTables()
 	self:NetworkVar( "Float", 0, "Radius") 
 	self:NetworkVar( "Float", 1, "LongSteps") 
@@ -8,26 +10,47 @@ function ENT:SetupDataTables()
 end
 
 function ENT:KeyValue( key, value )
-
 	if key == "Radius" then
 		self:SetRadius( value ) 
 	elseif key == "longSteps" then
 		self:SetLongSteps( value ) 
 	elseif key == "latSteps" then
 		self:SetLatSteps( value ) 
+	elseif key == "PlanetCell1" then
+		print("Key:"..key)
+		self.cell1 = util.StringToType( value, "Vector" )
+	elseif key == "PlanetCell2" then 
+		self.cell2 = util.StringToType( value, "Vector" )
+	elseif key == "Name" then
+		self.name = value
+	else
 	end
 end
 
+function ENT:InitializePlanet() 
+	if SERVER then 
+		local cells = {}
+		--Calculate Cells;
+		for i = self.cell1.x, self.cell2.x do 
+			for j = self.cell1.y, self.cell2.y do 
+				table.insert(cells, Vector(i, j, self.cell1.z))
+			end
+		end
+		print("Cells:")
+		PrintTable(cells)
+
+		self.planet = PlanetManager.RegisterPlanet( self.name or "Test", self.Radius, cells, self:GetPos() ) 
+		self.planet2 = PlanetManager.RegisterPlanet( self.name or "Test2", self.Radius, cells, self:GetPos() )
+		print("planet created!")
+	end
+	
+	--self.planet = Planet.create("Test") 
+end
+
 function ENT:Initialize()
-	print("SB Infinite Planet detected")
-	print("Planet Initialising! v2")
-	print("Radius: "..self:GetRadius())
 	self.Radius = self:GetRadius()
 	self.longSteps = self:GetLongSteps()
 	self.latSteps = self:GetLatSteps()
-	
-	self.latSteps = 10
-	self.longSteps = 10
 	
 	if CLIENT then self:SetRenderBounds(  Vector(-self.Radius,-self.Radius,-self.Radius), Vector(self.Radius,self.Radius,self.Radius) ) end
 	if SERVER then 
@@ -48,21 +71,20 @@ function ENT:Initialize()
 
 		
 	end
+	self:InitializePlanet()
 end
 
-function ENT:StartTouch( ent )
-	ent:SetPos(Vector(0,0,0))
+function ENT:StartTouch( touch )
+	self.planet:Teleport(touch)
+	touch.planet = self.planet
 end
-
-
-
 
 if CLIENT then 
 	function ENT:Draw()
 		render.SetMaterial( Material("editor/wireframe") )
 		
 		--render.SetColorMaterial()
-		render.SetMaterial( Material("editor/wireframe") )
+		render.SetMaterial( Material("bynari/moon") )
 		render.DrawSphere(self:GetPos(), self.Radius, self.longSteps, self.latSteps, Color(255,255,255,255))
 	end
 	

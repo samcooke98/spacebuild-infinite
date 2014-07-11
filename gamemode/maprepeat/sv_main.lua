@@ -52,7 +52,7 @@ function MapRepeat.SetRGen(ent,tbl)
 	maprepeat_rgen(ent,tbl)
 end
 function MapRepeat.AddCell(ent,cell)
-	print("Adding "..tostring(ent).." to Cell:"..tostring(cell));
+	--print("Adding "..tostring(ent).." to Cell:"..tostring(cell));
 	if ent == NULL then return end
 	MapRepeat.Cells[cell] = MapRepeat.Cells[cell] or {}
 	MapRepeat.Cells[cell][ent] = true
@@ -60,7 +60,25 @@ function MapRepeat.AddCell(ent,cell)
 	ent.Cells[#ent.Cells+1] = cell
 	maprepeat_cell(ent,cell)
 end
-function MapRepeat.SetCell(ent,cell)
+
+
+function MapRepeat.SetCell(ent,cell, noHook)
+	print("Cell Original: "..tostring(cell))
+	if type(cell) == "vector" then 
+		cell2 = tostring(cell.x).." "..tostring(cell.y).." "..tostring(cell.z) 
+		--print("Cell:" ..cell2)
+	end
+	
+	if ((nohook == false) or nohook == nil) then 
+		cell2 = (hook.Call ( "PlayerSetCell", GAMEMODE, ent, cell, (ent.Cells) ) ) 
+		print("Cell2: "..tostring(cell2))
+		if cell2 ~= nil then cell = cell2 end
+		if cell2 ~= nil and type(cell2)=="Vector" then 
+			cell = tostring(cell2.x).." "..tostring(cell2.y).." "..tostring(cell2.z) 
+		end
+		print("Now Cell ="..tostring(cell))
+	end
+	
 	if ent.Cells then 
 		for _,c in pairs(ent.Cells) do
 			(MapRepeat.Cells[c]||{})[ent] = nil
@@ -70,7 +88,9 @@ function MapRepeat.SetCell(ent,cell)
 	MapRepeat.Cells[cell][ent] = true
 	ent.Cells = {cell}
 	maprepeat_cell(ent,cell,true)
+	
 end
+
 function MapRepeat.PlayerData(ply)
 	umsg.Start("maprepeat_install",ply); umsg.End()
 	for k,v in pairs(MapRepeat.Sync or {}) do maprepeat_num(k,v,ply) end
@@ -149,15 +169,13 @@ end)
 MapRepeat.AddHook("ShouldCollide","SL_MRCollide",function(e1,e2)
 	if e1.InShip or e2.InShip then return false end
 	if not (MapRepeat.SameCell(e1,e2)) then result = false else result=true end
-	--print("Collision: "..tostring(result)..",Entity: "..tostring(e1).." & "..tostring(e2))
+	----print("Collision: "..tostring(result)..",Entity: "..tostring(e1).." & "..tostring(e2))
 	return result;
 end)
 MapRepeat.AddHook("PhysgunPickup","SL_MRPickup",function(e1,e2)
-	print("This works!")
 	if !MapRepeat.SameCell(e1,e2) then return false end
 end)
 MapRepeat.AddHook("PhysgunDrop","SL_MRPickup",function(e1,e2)
-	print("And this!")
 	if !MapRepeat.SameCell(e1,e2) then return false end
 end)
 
@@ -204,7 +222,7 @@ hook.Add("EntityKeyValue","MR_KVH",function(ent,k,v)
 		local i = string.sub(k,5)
 		local c = v
 		if string.find(c,'?') or string.find(c,'%%') then 
-			print("Found Question Mark, Found a %");
+			--print("Found Question Mark, Found a %");
 			local ct = MapRepeat.CellToArray(c)
 			rep[#rep+1] = ct
 		else
